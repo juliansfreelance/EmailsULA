@@ -40,55 +40,55 @@
          -webkit-font-smoothing: antialiased;
       }
 
-      .poppins-thin {
+      .fonts-thin {
          font-family: "Poppins", sans-serif;
          font-weight: 100;
          font-style: normal;
       }
 
-      .poppins-extralight {
+      .fonts-extralight {
          font-family: "Poppins", sans-serif;
          font-weight: 200;
          font-style: normal;
       }
 
-      .poppins-light {
+      .fonts-light {
          font-family: "Poppins", sans-serif;
          font-weight: 300;
          font-style: normal;
       }
 
-      .poppins-regular {
+      .fonts-regular {
          font-family: "Poppins", sans-serif;
          font-weight: 400;
          font-style: normal;
       }
 
-      .poppins-medium {
+      .fonts-medium {
          font-family: "Poppins", sans-serif;
          font-weight: 500;
          font-style: normal;
       }
 
-      .poppins-semibold {
+      .fonts-semibold {
          font-family: "Poppins", sans-serif;
          font-weight: 600;
          font-style: normal;
       }
 
-      .poppins-bold {
+      .fonts-bold {
          font-family: "Poppins", sans-serif;
          font-weight: 700;
          font-style: normal;
       }
 
-      .poppins-extrabold {
+      .fonts-extrabold {
          font-family: "Poppins", sans-serif;
          font-weight: 800;
          font-style: normal;
       }
 
-      .poppins-black {
+      .fonts-black {
          font-family: "Poppins", sans-serif;
          font-weight: 900;
          font-style: normal;
@@ -251,13 +251,14 @@
       .radius-20{border-radius: 20px;}
 
       .email {
-         min-width: 980px;
+          min-width: 980px;
          width: 100%;
          max-width: 1024px;
          margin: 0 auto;
          position: relative;
-         background: url('assets/backgrpund.png'),#fafafa;
-         background-size: contain;
+         background-image: url('images/background.png');
+         background-color: #fafafa;
+         background-size: cover;
          background-position: bottom center;
       }
 
@@ -304,10 +305,10 @@
 <body>
    <div class="email">
       <div class="header flex justify-center items-start relative">
-         <img src="assets/welcome.png">
+         <img src="images/welcome.png">
          <div class="absolute px-5" style="margin-top: 15%;">
-            <h3 class="text-white font-md poppins-bold  leading-tight">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
-            <p class="font-sm text-white text-center leading-tight px-5">En nombre de todo el equipo <span class="poppins-bold">Bayer®</span>, queremos expresar nuestro más sincero <span class="poppins-bold ">agradecimiento por su participación en Onconnecta 2024 celebrado en Cartagena el pasado 21 y 22 de junio</span>. Su presencia y contribución fueron fundamentales para el éxito de este evento médico.</p>
+            <h3 class="text-white font-md fonts-bold  leading-tight">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
+            <p class="font-sm text-white text-center leading-tight px-5">En nombre de todo el equipo <span class="fonts-bold">Bayer®</span>, queremos expresar nuestro más sincero <span class="fonts-bold ">agradecimiento por su participación en Onconnecta 2024 celebrado en Cartagena el pasado 21 y 22 de junio</span>. Su presencia y contribución fueron fundamentales para el éxito de este evento médico.</p>
          </div>
       </div>
 
@@ -316,38 +317,38 @@
       <div class="content">
 
          <div class="w-100 text-center gradiente-green radius-20">
-            <p class="text-white font-sm poppins-light leading-tight px-5">Esperamos que hayan disfrutado de su experiencia en <span class="poppins-bold">OnConnecta 2024</span> tanto como nosotros disfrutamos tenerlos como parte de este importante evento. <span class="poppins-bold ">Su participación ha sido invaluable y estamos muy agradecidos por su apoyo y asistencia.</span></p>
+            <p class="text-white font-sm fonts-light leading-tight px-5">Esperamos que hayan disfrutado de su experiencia en <span class="fonts-bold">OnConnecta 2024</span> tanto como nosotros disfrutamos tenerlos como parte de este importante evento. <span class="fonts-bold ">Su participación ha sido invaluable y estamos muy agradecidos por su apoyo y asistencia.</span></p>
          </div>
 
          <div class="w-100 text-center">
-            <p class="text-white font-sm poppins-light leading-tight px-5">A continuación, <span class="poppins-bold ">nos complace compartir con ustedes un video que recopila algunos momentos y experiencias vividas durante
+            <p class="text-white font-sm fonts-light leading-tight px-5">A continuación, <span class="fonts-bold ">nos complace compartir con ustedes un video que recopila algunos momentos y experiencias vividas durante
             el evento.</span> También estarán disponibles las fotografías que se captaron en el evento, y las entrevistas que se le
-            realizaron a algunos speakers. <span class="poppins-bold ">Esperamos que este material les traiga buenos recuerdos y refleje la energía y el
+            realizaron a algunos speakers. <span class="fonts-bold ">Esperamos que este material les traiga buenos recuerdos y refleje la energía y el
             espíritu que caracterizó OnConnecta 2024.</span></p>
          </div>
 
 
          <div class="w-100 flex flex-row flex-wrap justify-center items-start relative my-4">
             <div class="w-50 min-w-420px text-center border-r border-white">
-               <a href="" target="_blank" rel="noopener noreferrer"><img src="assets/btn1.png" alt="Enlace video general"></a>
-               <a href="" target="_blank" rel="noopener noreferrer"><img src="assets/btn2.png" alt="Enlace video de fotografias"></a>
+               <a href="" target="_blank" rel="noopener noreferrer"><img src="images/btn1.png" alt="Enlace video general"></a>
+               <a href="" target="_blank" rel="noopener noreferrer"><img src="images/btn2.png" alt="Enlace video de fotografias"></a>
             </div>
             <div class="w-50 min-w-420px text-center">
-               <a href="" target="_blank" rel="noopener noreferrer"><img src="assets/btn3.png" alt="Enlace entrevistas de los speakers"></a>
-               <a href="" target="_blank" rel="noopener noreferrer"><img src="assets/btn4.png" alt="Enlace Ver la charlas"></a>
+               <a href="" target="_blank" rel="noopener noreferrer"><img src="images/btn3.png" alt="Enlace entrevistas de los speakers"></a>
+               <a href="" target="_blank" rel="noopener noreferrer"><img src="images/btn4.png" alt="Enlace Ver la charlas"></a>
             </div>
          </div>
 
          <div class="w-100">
-            <p class="text-white font-sm poppins-light leading-tight px-5">Esperamos contar con su presencia en futuros eventos y seguir colaborando juntos en el avance de la medicina.
-            <p class="text-white font-sm poppins-light leading-tight px-5">¡Muchas gracias nuevamente por su tiempo, dedicación y contribución!</p>
-            <p class="text-white font-sm poppins-bold  leading-tight px-5">Atentamente,</p>
-            <p class="text-white font-md poppins-bold  leading-tight px-5">Cordial saludo,<br>{{userName}}</p>
+            <p class="text-white font-sm fonts-light leading-tight px-5">Esperamos contar con su presencia en futuros eventos y seguir colaborando juntos en el avance de la medicina.
+            <p class="text-white font-sm fonts-light leading-tight px-5">¡Muchas gracias nuevamente por su tiempo, dedicación y contribución!</p>
+            <p class="text-white font-sm fonts-bold  leading-tight px-5">Atentamente,</p>
+            <p class="text-white font-md fonts-bold  leading-tight px-5">Cordial saludo,<br>{{userName}}</p>
          </div>
 
          <div class="w-100 flex flex-row flex-wrap justify-center items-center relative">
-            <article class="w-100 text-white poppins-light font-xxs leading-tight text-justify px-5">
-               <p class="poppins-regular font-xs">PP-NUB-AR-0094-1 I Septiembre 2024</p>
+            <article class="w-100 text-white fonts-light font-xxs leading-tight text-justify px-5">
+               <p class="fonts-regular font-xs">PP-NUB-AR-0094-1 I Septiembre 2024</p>
                <p>Para MX: Uso exclusivo para profesionales de la salud. Información confidencial. Prohibida su reproducción.</p>
                <p>Para GT: Material Técnico/Científico para uso exclusivo del Profesional Médico.</p>
                <p>Material dirigido exclusivamente a profesionales de la salud en capacidad de prescribir medicamentos.</p>
@@ -358,7 +359,7 @@
       </div>
 
       <div class="footer">
-         <div class="enlaces text-white poppins-regular">
+         <div class="enlaces text-white fonts-regular">
             <a class="" href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank">Política de privacidad</a>
             <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank">Términos de uso</a>
             <a href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai" target="_blank">Cancelar suscripción</a>
