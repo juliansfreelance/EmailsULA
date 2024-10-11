@@ -25,62 +25,62 @@
          -webkit-font-smoothing: antialiased;
       }
 
-      .poppins-thin {
+      .font-thin {
          font-family: "Poppins", sans-serif;
          font-weight: 100;
          font-style: normal;
       }
 
-      .poppins-extralight {
+      .font-extralight {
          font-family: "Poppins", sans-serif;
          font-weight: 200;
          font-style: normal;
       }
 
-      .poppins-light {
+      .font-light {
          font-family: "Poppins", sans-serif;
          font-weight: 300;
          font-style: normal;
       }
 
-      .poppins-regular {
+      .font-regular {
          font-family: "Poppins", sans-serif;
          font-weight: 400;
          font-style: normal;
       }
 
-      .poppins-medium {
+      .font-medium {
          font-family: "Poppins", sans-serif;
          font-weight: 500;
          font-style: normal;
       }
 
-      .poppins-semibold {
+      .font-semibold {
          font-family: "Poppins", sans-serif;
          font-weight: 600;
          font-style: normal;
       }
 
-      .poppins-bold {
+      .font-bold {
          font-family: "Poppins", sans-serif;
          font-weight: 700;
          font-style: normal;
       }
 
-      .poppins-extrabold {
+      .font-extrabold {
          font-family: "Poppins", sans-serif;
          font-weight: 800;
          font-style: normal;
       }
 
-      .poppins-black {
+      .font-black {
          font-family: "Poppins", sans-serif;
          font-weight: 900;
          font-style: normal;
       }
 
       body {
-         background: #363636;
+         background: #FFFFFF;
          margin: 0 auto;
          padding: 0 0 0 0;
          font-family: "Poppins", sans-serif;
@@ -265,7 +265,8 @@
          max-width: 1024px;
          margin: 0 auto;
          position: relative;
-         background: url('assets/backgrpund.png'),#fafafa;
+         background-image: url('images/background.png');
+         background-color: #fafafa;
          background-size: cover;
          background-position: bottom center;
       }
@@ -314,25 +315,25 @@
 
    <div class="email">
       <div class="w-100 text-center">
-         <img src="assets/header.png" alt="Header">
+         <img src="images/header.png" alt="Header">
       </div>
       <div class="header flex justify-center items-start relative">
          <div class="px-5">
-            <h3 class="text-white font-sm poppins-light  leading-tight text-center">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
-            <p class="font-xl poppins-bold text-center leading-tight px-5 text-white">
+            <h3 class="text-white font-sm font-light  leading-tight text-center">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
+            <p class="font-xl font-bold text-center leading-tight px-5 text-white">
             Manejo centrado en el paciente
             </p>
          </div>
       </div>
      
       <div class="w-100 text-center">
-         <img src="assets/banner.png" alt="Banner">
+         <img src="images/banner.png" alt="Banner">
       </div>
 
       <div class="content">
 
          <div class="w-100 text-center">
-            <p class="text-white font-lg poppins-bold leading-tight px-5 mb-5">
+            <p class="text-white font-lg font-bold leading-tight px-5 mb-5">
                Expertos hablan sobre atención centrada en el
                paciente: El poder de la colaboración
                multidisciplinaria en el manejo a largo plazo
@@ -344,43 +345,43 @@
          <div class="w-100 flex flex-row flex-wrap justify-center items-start relative my-1 mt-3">
             <!-- <div class="w-50 min-w-420px text-center border-r border-white"> -->
                <a class="my-2 w-80 sombra-img" href="https://www.universomedico.com.co/contenidos/97ed152f-1487-4eeb-b267-9b5d925de250?token=775d9dbf-8b10-4453-a1ce-6ad7e7cde045" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/btn1.png" alt="Enlace video mHSPC Throwdown: Doublet, Triplet,Quadruplet What's Your Combo?">
+                  <img src="images/btn1.png" alt="Enlace video mHSPC Throwdown: Doublet, Triplet,Quadruplet What's Your Combo?">
                </a>
 
                <a class="my-2 w-80 sombra-img" href="https://www.universomedico.com.co/contenidos/7962242a-a5fe-4b05-9bc0-0900c487826d?token=d52c3c6f-a1e9-4064-a13a-a0be5f6eb8ce" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/btn2.png" alt="Enlace video de “How RWE can support daily clinical decision making:DEAR data and Healthcare cost analysis on nmCRPC">
+                  <img src="images/btn2.png" alt="Enlace video de “How RWE can support daily clinical decision making:DEAR data and Healthcare cost analysis on nmCRPC">
                </a>
 
                <a class="my-2 w-80 sombra-img" href="https://www.universomedico.com.co/contenidos/2f8f5bff-dd73-4424-bc14-4f856a21be35?token=691b6699-48bf-49f9-8b62-41d795f1eb83" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/btn3.png" alt="Enlace video de Workshop Challenging mHSPC cases">
+                  <img src="images/btn3.png" alt="Enlace video de Workshop Challenging mHSPC cases">
                </a>
             </div>
 
            <div class="w-100 mt-4">
-            <p class="text-white font-sm poppins-light leading-tight px-5"> Esperamos que encuentre estas presentaciones enriquecedoras y que le brinden información valiosa, incluso a distancia. No dude en ponerse en contacto si necesita más información o asistencia </p>
-            <p class="text-white font-sm poppins-light leading-tight px-5"> ¡Le agradecemos su atención y esperamos que disfrute de las charlas seleccionadas</p>
-            <p class="text-white font-sm poppins-bold  leading-tight px-5">Atentamente,</p>
-            <p class="text-white font-md poppins-bold  leading-tight px-5">Cordial saludo,<br>{{userName}}</p>
+            <p class="text-white font-sm font-light leading-tight px-5"> Esperamos que encuentre estas presentaciones enriquecedoras y que le brinden información valiosa, incluso a distancia. No dude en ponerse en contacto si necesita más información o asistencia </p>
+            <p class="text-white font-sm font-light leading-tight px-5"> ¡Le agradecemos su atención y esperamos que disfrute de las charlas seleccionadas</p>
+            <p class="text-white font-sm font-bold  leading-tight px-5">Atentamente,</p>
+            <p class="text-white font-md font-bold  leading-tight px-5">Cordial saludo,<br>{{userName}}</p>
          </div>
 
-         <div class="w-100 opacity-75 mt-3 flex flex-row flex-wrap justify-center items-center relative">
-            <article class="w-100 text-white poppins-light font-xxs leading-tight text-justify">
-               <p class="poppins-regular text-center font-xxs my-0 ">PP-NUB-BR-0365-1 | Septiembre 2024</p>
-               <p class="poppins-regular text-center font-xxs my-0">Para México: Uso exclusivo para profesionales de la salud. Información confidencial. Prohibida su reproducción.</p>
-               <p class="poppins-regular text-center font-xxs">Para Guatemala: Material Técnico/Científico para uso exclusivo del Profesional Médico.</p>
-               <p class="poppins-regular text-center font-xxs my-0">Material Técnico/Científico dirigido exclusivamente a Profesionales
+         <div class="w-100 mt-3 flex flex-row flex-wrap justify-center items-center relative">
+            <article class="w-100 text-white font-light font-xxs leading-tight text-justify">
+               <p class="font-regular text-center font-xxs my-0 opacity-75">PP-NUB-BR-0365-1 | Septiembre 2024</p>
+               <p class="font-regular text-center font-xxs my-0 opacity-75">Para México: Uso exclusivo para profesionales de la salud. Información confidencial. Prohibida su reproducción.</p>
+               <p class="font-regular text-center font-xxs opacity-75">Para Guatemala: Material Técnico/Científico para uso exclusivo del Profesional Médico.</p>
+               <p class="font-regular text-center font-xxs opacity-75 my-0">Material Técnico/Científico dirigido exclusivamente a Profesionales
                   de la salud en capacidad de prescribir medicamentos.</p>
-               <p class="poppins-regular text-center font-xxs my-0">Venta bajo prescripción médica. Consulte a su médico. Todo medicamento posee eventos secundarios.</p>
-               <p class="poppins-regular text-center font-xxs my-0">Este medicamento requiere receta médica. En caso de duda consulte a su médico o farmacéutico.</p>
-               <p class="poppins-regular text-center font-xxs my-0">Si desea informar o reportar un evento adverso o un reclamo técnico de producto asociado a un producto Bayer, por favor, póngase en contacto con</p>
-               <p class="poppins-regular text-center font-xxs my-0">su médico o profesional de la salud, su autoridad sanitaria local y/o dirija sus comentarios en:
-                  <a class="poppins-bold opacity-100" href="https://safetrack-public.bayer.com/" target="_blank">https://safetrack-public.bayer.com/</a></p>
+               <p class="font-regular text-center font-xxs opacity-75 my-0">Venta bajo prescripción médica. Consulte a su médico. Todo medicamento posee eventos secundarios.</p>
+               <p class="font-regular text-center font-xxs opacity-75 my-0">Este medicamento requiere receta médica. En caso de duda consulte a su médico o farmacéutico.</p>
+               <p class="font-regular text-center font-xxs opacity-75 my-0">Si desea informar o reportar un evento adverso o un reclamo técnico de producto asociado a un producto Bayer, por favor, póngase en contacto con</p>
+               <p class="font-regular text-center font-xxs my-0"> <span class="opacity-75">su médico o profesional de la salud, su autoridad sanitaria local y/o dirija sus comentarios en:</span> 
+                  <a class="font-bold opacity-100" href="https://safetrack-public.bayer.com/" target="_blank">https://safetrack-public.bayer.com/</a></p>
             </article>
          </div>
       </div>
 <hr class="mx-5 my-3">
       <div class="footer">
-         <div class="enlaces text-white poppins-regular">
+         <div class="enlaces text-white font-regular">
             <a class="" href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank">Política de privacidad</a>
             <a class="border-x border-white" href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank">Términos de uso</a>
             <a class="border-r border-white" href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai" target="_blank">Cancelar suscripción</a>
