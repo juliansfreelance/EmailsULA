@@ -38,423 +38,104 @@
       * {
          -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
          -webkit-font-smoothing: antialiased;
-         /* user-select: none; */
+         user-select: none;
       }
-      .font-thin {
-         font-family: "Poppins", sans-serif;
-         font-weight: 100;
-         font-style: normal;
+   
+      html {
+         background-color: #FFFFFF;
       }
-
-      .font-extralight {
-         font-family: "Poppins", sans-serif;
-         font-weight: 200;
-         font-style: normal;
-      }
-
-      .font-light {
-         font-family: "Poppins", sans-serif;
-         font-weight: 300;
-         font-style: normal;
-      }
-
-      .font-regular {
-         font-family: "Poppins", sans-serif;
-         font-weight: 400;
-         font-style: normal;
-      }
-
-      .font-medium {
-         font-family: "Poppins", sans-serif;
-         font-weight: 500;
-         font-style: normal;
-      }
-
-      .font-semibold {
-         font-family: "Poppins", sans-serif;
-         font-weight: 600;
-         font-style: normal;
-      }
-
-      .font-bold {
-         font-family: "Poppins", sans-serif;
-         font-weight: 700;
-         font-style: normal;
-      }
-
-      .font-extrabold {
-         font-family: "Poppins", sans-serif;
-         font-weight: 800;
-         font-style: normal;
-      }
-
-      .font-black {
-         font-family: "Poppins", sans-serif;
-         font-weight: 900;
-         font-style: normal;
-      }
-
-      .font-thin-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 100;
-         font-style: italic;
-      }
-
-      .font-extralight-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 200;
-         font-style: italic;
-      }
-
-      .font-light-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 300;
-         font-style: italic;
-      }
-
-      .font-regular-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 400;
-         font-style: italic;
-      }
-
-      .font-medium-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 500;
-         font-style: italic;
-      }
-
-      .font-semibold-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 600;
-         font-style: italic;
-      }
-
-      .font-bold-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 700;
-         font-style: italic;
-      }
-
-      .font-extrabold-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 800;
-         font-style: italic;
-      }
-
-      .font-black-italic {
-         font-family: "Poppins", sans-serif;
-         font-weight: 900;
-         font-style: italic;
-      }
-
+   
       body {
-         background: #FFFFFF;
+         background: #FAFAFA;
          margin: 0 auto;
          padding: 0 0 0 0;
-         font-family: "Poppins", sans-serif;
-         font-weight: 300;
-         font-size: 16px;
+         width: 900px;
+         position: relative;
       }
-      a, a:visited, a:active {
-         text-decoration: none;
-         color: inherit;
-      }
-      a[x-apple-data-detectors] {
-         color: inherit !important;
-         text-decoration: none !important;
-         font-size: inherit !important;
-         font-family: inherit !important;
-         font-weight: inherit !important;
-         line-height: inherit !important;
-      }
-      img{
+   
+      img {
          width: 100%;
          height: auto;
       }
-      .text-blue{color: #223C78;}
-      .text-orange{color: #F06623;}
-      .text-gray{color: #77787B;}
-      .text-white{color: #fafafa;}
-
-      .bg-blue{background: #223C78;}
-      .bg-orange{background: #F06623;}
-      .bg-gray{background: #77787B;}
-      .bg-white{background: #fafafa;}
-      .bg-slate{background: #cbd5e1;}
-
-      .border-blue{border-color: #223C78;}
-      .border-orange{border-color: #F06623;}
-      .border-gray{border-color: #77787B;}
-      .border-white{border-color: #fafafa;}
-      .border-slate{border-color: #cbd5e1;}
-
-      .border{border-width: 1px; border-style: solid;}
-
-      .font-xxs {font-size: 12px;}
-      .font-xs {font-size: 16px;}
-      .font-sm {font-size: 20px;}
-      .font-md {font-size: 25px;}
-      .font-lg {font-size: 34px;}
-      .font-xl {font-size: 40px;}
-      .font-2xl {font-size: 80px;}
-
-      .text-center{text-align: center;}
-      .text-left{text-align: left;}
-      .text-right{text-align: right;}
-      .text-justify{text-align: justify;}
-
-      .leading-none{line-height: 1;}
-      .leading-tight{line-height: 1.25;}
-      .leading-snug{line-height: 1.375;}
-      .leading-normal{line-height: 1.5;}
-      .leading-relaxed{line-height: 1.625;}
-      .leading-loose{line-height: 2;}
-
-      .px-0{padding-left: 0; padding-right: 0;}
-      .px-1{padding-left: 0.25rem; padding-right: 0.25rem;}
-      .px-2{padding-left: 0.5rem; padding-right: 0.5rem;}
-      .px-3{padding-left: 1rem; padding-right: 1rem;}
-      .px-4{padding-left: 1.5rem; padding-right: 1.5rem;}
-      .px-5{padding-left: 3rem; padding-right: 3rem;}
-
-      .py-0{padding-top: 0; padding-bottom: 0;}
-      .py-1{padding-top: 0.25rem; padding-bottom: 0.25rem;}
-      .py-2{padding-top: 0.5rem; padding-bottom: 0.5rem;}
-      .py-3{padding-top: 1rem; padding-bottom: 1rem;}
-      .py-4{padding-top: 1.5rem; padding-bottom: 1.5rem;}
-      .py-5{padding-top: 3rem; padding-bottom: 3rem;}
-
-      .mx-0{margin-left: 0; margin-right: 0;}
-      .mx-1{margin-left: 0.25rem; margin-right: 0.25rem;}
-      .mx-2{margin-left: 0.5rem; margin-right: 0.5rem;}
-      .mx-3{margin-left: 1rem; margin-right: 1rem;}
-      .mx-4{margin-left: 1.5rem; margin-right: 1.5rem;}
-      .mx-5{margin-left: 3rem; margin-right: 3rem;}
-
-      .my-0{margin-top: 0; margin-bottom: 0;}
-      .my-1{margin-top: 0.25rem; margin-bottom: 0.25rem;}
-      .my-2{margin-top: 0.5rem; margin-bottom: 0.5rem;}
-      .my-3{margin-top: 1rem; margin-bottom: 1rem;}
-      .my-4{margin-top: 1.5rem; margin-bottom: 1.5rem;}
-      .my-5{margin-top: 3rem; margin-bottom: 3rem;}
-
-      .grid{display: grid;}
-      .grid-cols-2{grid-template-columns: repeat(2, minmax(0, 1fr));}
-      .grid-rows-2{grid-template-rows: repeat(2, minmax(0, 1fr));}
-      .grid-flow-col{grid-auto-flow: row;}
-      .gap{gap: 1rem;}
-
-      .flex{display: flex;}
-
-      .absolute{position: absolute;}
-      .relative{position: relative;}
-
-      .justify-center{justify-content: center;}
-      .justify-between{justify-content: space-between;}
-      .justify-around{justify-content: space-around;}
-      .justify-evenly{justify-content: space-evenly;}
-
-      .items-center{align-items: center;}
-      .items-start{align-items: flex-start;}
-      .items-end{align-items: flex-end;}
-      .items-baseline{align-items: baseline;}
-      .items-stretch{align-items: stretch;}
-
-      .flex-wrap{flex-wrap: wrap;}
-      .flex-nowrap{flex-wrap: nowrap;}
-      .flex-wrap-reverse{flex-wrap: wrap-reverse;}
-
-      .flex-col{flex-direction: column;}
-      .flex-row{flex-direction: row;}
-      .flex-col-reverse{flex-direction: column-reverse;}
-      .flex-row-reverse{flex-direction: row-reverse;}
-
-      .w-20{width: 20%;}
-      .w-30{width: 30%;}
-      .w-40{width: 40%; margin: 0 auto;}
-      .w-50{width: 46%; margin: 0 auto;}
-      .w-60{width: 60%;}
-      .w-80{width: 80%;}
-      .w-90{width: 90%;}
-      .w-100{width: 100%;}
-      .min-w-420px{min-width: 420px;}
-
-      .h-50{height: 50%;}
-      .h-80{height: 80%;}
-      .h-100{height: 100%;}
-      .h-100px{height: 100px;}
-
-      .min-h-0{min-height: 0;}
-      .min-h-full{min-height: 100%;}
-      .min-h-screen{min-height: 100vh;}
-      .min-h-100px{min-height: 100px;}
-
-
-      .z-100{z-index: 100;}
-      .z-200{z-index: 200;}
-      .z-300{z-index: 300;}
-      .z-400{z-index: 400;}
-
-      .radius-5{border-radius: 5px;}
-      .radius-10{border-radius: 10px;}
-      .radius-20{border-radius: 20px;}
-
-      .email {
-         min-width: 1024px;
-         width: 1024px;
-         max-width: 1024px;
-         margin: 0 auto;
-         position: relative;
-         background: #fafafa;
-      }
-
-      .header, .footer{
-         width: 100%;
-         height: auto;
-         margin: 0px;
-         padding: 0px;
-         line-height: 0px;
-      }
-
-      .content {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         align-items: center;
-         padding: 20px 60px 0px 60px;
-      }
-
-      ul li {
-         margin: 10px 0;
-      }
-      .list-none {
-         list-style: none;
-      }
-
-      .footer {
-         position: relative;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-      }
-      .enlaces {
-         margin-top: 40px;
-         line-height: 1;
+   
+      a {
          position: absolute;
+         /* background: #000; */
+         /* opacity: 0.5; */
       }
-      .enlaces a {
-         margin: 0px 10px;
+      .guidelines {
+         top: 2125px;
+         left: 270px;
+         width: 375px;
+         height: 20px;
       }
+      .qr_01_colombia {
+         top: 2205px;
+         left: 243px;
+         width: 85px;
+         height: 85px;
+      }
+      .qr_02_ecuador {
+         top: 2205px;
+         left: 405px;
+         width: 85px;
+         height: 85px;
+      }
+      .qr_03_peru {
+         top: 2205px;
+         left: 570px;
+         width: 90px;
+         height: 90px;
+      }
+      .link_bayer {
+         top: 2327px;
+         left: 574px;
+         width: 80px;
+         height: 7px;
+      }
+
+      .link_safe {
+         top: 2435px;
+         left: 553px;
+         width: 245px;
+         height: 17px;
+      }
+   
+      .politica_privacidad {
+         top: 2487px;
+         left: 282px;
+         width: 135px;
+         height: 20px;
+      }
+      .terminos_uso {
+         top: 2487px;
+         left: 437px;
+         width: 105px;
+         height: 20px;
+      }
+      .contacto {
+         top: 2487px;
+         left: 560px;
+         width: 62px;
+         height: 20px;
+      }
+   
 
    </style>
-</head>
-<body>
-   <div class="email">
-      <div class="header">
-         <img src="images/header.png">
-      </div>
-
-      <div class="content">
-
-         <div class="w-100 text-center">
-            <h3 class="text-blue font-md font-bold leading-tight">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
-            <h1 class="text-orange font-lg font-bold leading-tight"><span class="font-2xl">¿Sabías qué...</span><br>existen estudios en vida real<br>con Darolutamida?</h1>
-            <p class="text-gray font-sm font-light leading-tight px-5">DEAR es un estudio de vida real que evaluó el uso de Darolutamida, Enzalutamida y Apalutamida en la práctica clínica habitual para cáncer de próstata no metastásico resistente a castración (CPRCnm).</p>
-         </div>
-
-
-         <div class="w-100 text-center bg-white flex relative items-center justify-center">
-            <hr class="absolute w-100 border-blue z-100">
-            <h3 class="w-80 text-blue font-sm font-bold leading-tight px-2 bg-white z-200">LA <span class="text-orange">EFICACIA Y TOLERABILIDAD</span> FAVORABLE DE <span class="text-orange">NUBEQA<sup>®</sup></span> (DAROLUTAMIDA) EN <span class="text-orange">PACIENTES CON CPRCnm</span> SON CONFIRMADOS EN EL ESTUDIO DEAR.<sup>1*</sup></h3>
-         </div>
-
-
-         <div class="w-100 flex flex-row flex-wrap justify-center items-start relative">
-            <div class="w-50 min-w-420px text-center">
-               <p class="text-center font-xs font-bold border border-orange text-blue radius-5 my-2 py-2 leading-tight">Proporción de Pacientes con <span class="text-orange">CPRCnm</span> que<br>interrumpieron el tratamiento inicial</p>
-               <img src="images/grafico1.png" alt="grafico1" class="w-100">
-            </div>
-            <div class="w-50 min-w-420px text-center">
-               <p class="text-center font-xs font-bold border border-orange text-blue radius-5 my-2 py-2 leading-tight">Proporción de pacientes que<br>progresaron a <span class="text-orange">CPRCm</span></p>
-               <img src="images/grafico2.png" alt="grafico2" class="w-90">
-            </div>
-         </div>
-
-
-         <div class="w-100 px-5">
-            <p class="font-bold-italic font-md text-blue text-center leading-tight">NUBEQA<sup>®</sup> (DAROLUTAMIDA) SE ASOCIÓ A UN RIESGO MENOR DE INTERRUPCIÓN DEL TRATAMIENTO Y PROGRESIÓN A CPRCm EN COMPARACIÓN CON ENZALUTAMIDA Y APALUTAMIDA</p>
-         </div>
-
-         <hr class="w-100 border-gray">
-
-         <div class="w-100 flex flex-row flex-wrap justify-center items-center relative">
-            <div class="text-center text-orange font-bold-italic leading-none" style="width: 140px;"><a href="{{$1460648}}" target="_blank">Clic aquí para visualizar el Abstract<br><span class="text-blue font-black-italic">DEAR ASCO</span> </a></div>
-            <ul class="w-80 text-blue font-light font-xs list-none">
-               <li><span class="font-bold-italic font-sm">El estudio DEAR demuestra</span> una diferenciación entre los ARIs disponibles para el tratamiento de CPRCnm en la práctica clínica de vida real.</li>
-               <li><span class="font-bold-italic font-sm">El Estudio DEAR evidenció</span> que los pacientes que reciben tratamiento por más tiempo tienen un impacto positivo en los desenlaces clínicos como mayor supervivencia global y disminución de la progresión a CPRCm.</li>
-            </ul>
-         </div>
-      </div>
-
-      <div class="flex flex-col justify-center items-center px-0 relative">
-         <img src="images/caso.png" alt="caso">
-         <div class="flex flex-row justify-between items-center absolute" style="margin-top: -40px; margin-right: 30px;">
-            <div class="w-40"></div>
-            <ul class="w-50 text-blue font-light text-white text-justify leading-tight" style="font-size: 18px;">
-               <li style="margin-bottom: 60px;">La tolerabilidad y una menor tasa de EAs son aspectos cruciales en la elección del tratamiento para pacientes con cáncer de próstata, dado su impacto en la calidad de vida luego del diagnóstico, tanto por la enfermedad en sí como por el tratamiento a recibir.</li>
-               <li><span class="font-bold">DEAR</span>  un estudio retrospectivo en donde se evaluaron más de <span class="font-bold">100 centros de tratamiento de urología y 3500 urólogos en Estados Unidos.</span></li>
-            </ul>
-         </div>
-
-      </div>
-
-      <div class="content">
-         <div class="w-100 flex flex-row flex-wrap justify-center items-center relative">
-            <article class="w-50 text-gray font-light font-xxs leading-tight text-justify">
-               <h4 class="font-bold font-xs">REFERENCIAS</h4>
-               <p>*El estudio DEAR es una revisión retrospectiva de las historias clínicas electrónicas de la red PPS de consultas de urología en los Estados Unidos. Los pacientes aptos para participar tenían CPRCnm, no habían recibido terapia hormonal previa e iniciaron su primer tratamiento con IRA entre agosto de 2019 y marzo de 2022. Se llevó a cabo un análisis comparativo entre NUBEQA (n=362) y enzalutamida (n=382)/apalutamida (n=126) utilizando modelos de riesgos proporcionales de Cox para el tiempo hasta la interrupción y hasta la progresión, regulando la dosis según los factores iniciales observados.<br>Edad promedio para NUBEQA/enzalutamida/apalutamida, respectivamente: 80/79/80 años; tiempo de duplicación promedio del PSA inicial para NUBEQA/enzalutamida/apalutamida, respectivamente: 6.8/6.4/7.4 meses. La interrupción se definió como la interrupción inicial del tratamiento con IRA, IRA o el fallecimiento del paciente. el cambio a otro †Los cálculos se regularon para tener en cuenta las características iniciales observadas.</p>
-               <p>George D, Khan N, et al. Real-world Use of Darolutamide, Enzalutamide and Apalutamide for Nonmetastasic Castration- Resistant ProstateCancer (DEAR), ASCO 23 May 2023.</p>
-               <p>Material Técnico/Científico dirigido exclusivamente a Profesionales de la salud en capacidad de prescribir medicamentos.</p>
-               <p>Todo medicamento posee efectos secundarios. Este medicamento requiere receta médica. Consulte con su médico.</p>
-               <p>Para Perú: En el link adjunto se encuentra la ficha técnica de producto aprobada por DIGEMID.<br>Registro Sanitario R.S. N° EE-09865. <a href="https://go.bayer.com/nubeqa" target="_blank">https://go.bayer.com/nubeqa</a><br>RUC: 20100096341 Denominación Social: Bayer, S. A.</p>
-               <p>Si desea informar o reportar un evento adverso o un reclamo técnico de producto asociado a un producto Bayer, por favor, póngase en contacto con su médico o profesional de la salud, su autoridad sanitaria local y/o dirija sus comentarios en: <a href="https://safetrack-public.bayer.com/" target="_blank" rel="noopener noreferrer">https://safetrack-public.bayer.com/</a></p>
-            </article>
-            <div class="w-50 flex flex-row flex-wrap justify-center items-center relative text-gray font-light font-xxs leading-tight text-center">
-               <figure class="w-50">
-                  <figcaption class="my-2">Textos de prescripción<br>Colombia</figcaption>
-                  <a href="https://drive.google.com/drive/folders/1F8F_98MABe7cMY_zH-5-Zp2a3LNKDEt1?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="images/qr1.png" alt="Textos de prescripción Colombia"></a>
-               </figure>
-               <figure class="w-50">
-                  <figcaption class="my-2">Textos de prescripción<br>Perú</figcaption>
-                  <a href="https://drive.google.com/drive/folders/1CJZunMIix38HpXg54WTdVb2eJ6mtsRvY?usp=share_link" target="_blank" rel="noopener noreferrer"><img src="images/qr2.png" alt="Textos de prescripción Perú"></a>
-               </figure>
-               <figure class="w-50">
-                  <figcaption class="my-2">Textos de prescripción<br>Ecuador</figcaption>
-                  <a href="https://drive.google.com/drive/folders/1vTDtP-o8ffWNZTzejcPn8MhpxmbOMTDC?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="images/qr3.png" alt="Textos de prescripción Ecuador"></a>
-               </figure>
-               <figure class="w-50">
-                  <figcaption class="my-2"><a href="https://go.bayer.com/nubeqa" target="_blank">https://go.bayer.com/nubeqa</a></figcaption>
-               </figure>
-            </div>
-         </div>
-
-
-         <div class="w-100 text-gray font-light font-xs text-right">PP-NUB-CO-0446-1</div>
-      </div>
-
-
-
-      <div class="footer">
-         <img src="images/footer.png">
-         <div class="enlaces text-white font-normal">
-            <a class="" href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank">Política de privacidad</a>
-            <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank">Términos de uso</a>
-            <a href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai" target="_blank">Cancelar suscripción</a>
-            <a href="" target="_blank">Contacto</a>
-         </div>
-      </div>
-   </div>
-</body>
+   </head>
+   
+   <body>
+      <img src="images/email.jpg" alt="dear">
+      <a href="" target="_blank" class="guidelines"></a>
+      <a href="https://drive.google.com/drive/folders/1F8F_98MABe7cMY_zH-5-Zp2a3LNKDEt1?usp=sharing"target="_blank" class="qr_01_colombia"></a>
+      <a href="https://drive.google.com/drive/folders/1vTDtP-o8ffWNZTzejcPn8MhpxmbOMTDC?usp=sharing"target="_blank" class="qr_02_ecuador"></a>
+      <a href="https://drive.google.com/drive/folders/1CJZunMIix38HpXg54WTdVb2eJ6mtsRvY?usp=share_link"target="_blank" class="qr_03_peru"></a>
+      <a href="https://go.bayer.com/nubeqa" target="_blank" class="link_bayer"></a>
+      <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
+      <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank"
+         class="politica_privacidad"></a>
+      <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank"
+         class="terminos_uso"></a>
+      <a href="http://" target="_blank" class="contacto"></a>
+   </body>
 </html>
