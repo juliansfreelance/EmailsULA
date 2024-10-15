@@ -23,371 +23,102 @@
       * {
          -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
          -webkit-font-smoothing: antialiased;
+         user-select: none;
       }
-
-      .font-thin {
-         font-family: "Poppins", sans-serif;
-         font-weight: 100;
-         font-style: normal;
+   
+      html {
+         background-color: #FFFFFF;
       }
-
-      .font-extralight {
-         font-family: "Poppins", sans-serif;
-         font-weight: 200;
-         font-style: normal;
-      }
-
-      .font-light {
-         font-family: "Poppins", sans-serif;
-         font-weight: 300;
-         font-style: normal;
-      }
-
-      .font-regular {
-         font-family: "Poppins", sans-serif;
-         font-weight: 400;
-         font-style: normal;
-      }
-
-      .font-medium {
-         font-family: "Poppins", sans-serif;
-         font-weight: 500;
-         font-style: normal;
-      }
-
-      .font-semibold {
-         font-family: "Poppins", sans-serif;
-         font-weight: 600;
-         font-style: normal;
-      }
-
-      .font-bold {
-         font-family: "Poppins", sans-serif;
-         font-weight: 700;
-         font-style: normal;
-      }
-
-      .font-extrabold {
-         font-family: "Poppins", sans-serif;
-         font-weight: 800;
-         font-style: normal;
-      }
-
-      .font-black {
-         font-family: "Poppins", sans-serif;
-         font-weight: 900;
-         font-style: normal;
-      }
-
+   
       body {
-         background: #FFFFFF;
+         background: #FAFAFA;
          margin: 0 auto;
          padding: 0 0 0 0;
-         font-family: "Poppins", sans-serif;
-         font-weight: 300;
-         font-size: 16px;
+         width: 900px;
+         position: relative;
       }
-      a, a:visited, a:active {
-         text-decoration: none;
-         color: inherit;
-      }
-      a[x-apple-data-detectors] {
-         color: inherit !important;
-         text-decoration: none !important;
-         font-size: inherit !important;
-         font-family: inherit !important;
-         font-weight: inherit !important;
-         line-height: inherit !important;
-      }
-      img{
+   
+      img {
          width: 100%;
          height: auto;
       }
-
-      .sombra-img{filter: drop-shadow(10px 0px 20px rgba(0,0,0,0.8));}
-
-      .text-blue{color: #223C78;}
-      .text-orange{color: #F06623;}
-      .text-gray{color: #77787B;}
-      .text-white{color: #fafafa;}
-      
-      .opacity-0{opacity: 0;}
-      .opacity-25{opacity: 0.25;}
-      .opacity-50{opacity: 0.5;}
-      .opacity-75{opacity: 0.75;}
-      .opacity-100{opacity: 1;}
-
-      .bg-blue{background: #223C78;}
-      .bg-orange{background: #F06623;}
-      .bg-gray{background: #77787B;}
-      .bg-white{background: #fafafa;}
-      .bg-slate{background: #cbd5e1;}
-
-      .border-blue{border-color: #223C78;}
-      .border-orange{border-color: #F06623;}
-      .border-gray{border-color: #77787B;}
-      .border-white{border-color: #fafafa;}
-      .border-slate{border-color: #cbd5e1;}
-
-      .gradiente-green {
-         background: rgb(158,212,45);
-         background: radial-gradient(circle, rgba(158,212,45,1) 0%, rgba(108,193,66,1) 42%);
+   
+      a {
+         position: absolute;
+         /* background: #000; */
+         /* opacity: 0.5; */
       }
-
-      .border{border-width: 2px; border-style: solid;}
-      .border-l {border-width: 0px 0px 0px 2px; border-style: solid;}
-      .border-r {border-width: 0px 2px 0px 0px; border-style: solid;}
-      .border-t {border-width: 2px 0px 0px 0px; border-style: solid;}
-      .border-b {border-width: 0px 0px 2px 0px; border-style: solid;}
-      .border-x {border-width: 0px 2px 0px 2px; border-style: solid;}
-
-      .font-xxs {font-size: 12px;}
-      .font-xs {font-size: 16px;}
-      .font-sm {font-size: 20px;}
-      .font-md {font-size: 25px;}
-      .font-lg {font-size: 34px;}
-      .font-xl {font-size: 40px;}
-      .font-2xl {font-size: 80px;}
-
-      .text-center{text-align: center;}
-      .text-left{text-align: left;}
-      .text-right{text-align: right;}
-      .text-justify{text-align: justify;}
-
-      .leading-none{line-height: 1;}
-      .leading-tight{line-height: 1.25;}
-      .leading-snug{line-height: 1.375;}
-      .leading-normal{line-height: 1.5;}
-      .leading-relaxed{line-height: 1.625;}
-      .leading-loose{line-height: 2;}
-
-      .px-0{padding-left: 0; padding-right: 0;}
-      .px-1{padding-left: 0.25rem; padding-right: 0.25rem;}
-      .px-2{padding-left: 0.5rem; padding-right: 0.5rem;}
-      .px-3{padding-left: 1rem; padding-right: 1rem;}
-      .px-4{padding-left: 1.5rem; padding-right: 1.5rem;}
-      .px-5{padding-left: 3rem; padding-right: 3rem;}
-      .px-6{padding-left: 4rem; padding-right: 4rem;}
-
-      .py-0{padding-top: 0; padding-bottom: 0;}
-      .py-1{padding-top: 0.25rem; padding-bottom: 0.25rem;}
-      .py-2{padding-top: 0.5rem; padding-bottom: 0.5rem;}
-      .py-3{padding-top: 1rem; padding-bottom: 1rem;}
-      .py-4{padding-top: 1.5rem; padding-bottom: 1.5rem;}
-      .py-5{padding-top: 3rem; padding-bottom: 3rem;}
-
-      .mx-0{margin-left: 0; margin-right: 0;}
-      .mx-1{margin-left: 0.25rem; margin-right: 0.25rem;}
-      .mx-2{margin-left: 0.5rem; margin-right: 0.5rem;}
-      .mx-3{margin-left: 1rem; margin-right: 1rem;}
-      .mx-4{margin-left: 1.5rem; margin-right: 1.5rem;}
-      .mx-5{margin-left: 3rem; margin-right: 3rem;}
-
-      .my-0{margin-top: 0; margin-bottom: 0;}
-      .my-1{margin-top: 0.25rem; margin-bottom: 0.25rem;}
-      .my-2{margin-top: 0.5rem; margin-bottom: 0.5rem;}
-      .my-3{margin-top: 1rem; margin-bottom: 1rem;}
-      .my-4{margin-top: 1.5rem; margin-bottom: 1.5rem;}
-      .my-5{margin-top: 3rem; margin-bottom: 3rem;}
-
-      .mt-0{margin-top: 0;}
-      .mt-1{margin-top: 0.25rem;}
-      .mt-2{margin-top: 0.5rem;}
-      .mt-3{margin-top: 1rem;}
-      .mt-4{margin-top: 1.5rem;}
-      .mt-5{margin-top: 3rem;}
-
-      .mb-0{margin-bottom: 0;}
-      .mb-1{margin-bottom: 0.25rem;}
-      .mb-2{margin-bottom: 0.5rem;}
-      .mb-3{margin-bottom: 1rem;}
-      .mb-4{margin-bottom: 1.5rem;}
-      .mb-5{margin-bottom: 3rem;}
-
-      .absolute{position: absolute;}
-      .relative{position: relative;}
-
-      .flex{display: flex;}
-
-      .justify-center{justify-content: center;}
-      .justify-between{justify-content: space-between;}
-      .justify-around{justify-content: space-around;}
-      .justify-evenly{justify-content: space-evenly;}
-
-      .items-center{align-items: center;}
-      .items-start{align-items: flex-start;}
-      .items-end{align-items: flex-end;}
-      .items-baseline{align-items: baseline;}
-      .items-stretch{align-items: stretch;}
-
-      .flex-wrap{flex-wrap: wrap;}
-      .flex-nowrap{flex-wrap: nowrap;}
-      .flex-wrap-reverse{flex-wrap: wrap-reverse;}
-
-      .flex-col{flex-direction: column;}
-      .flex-row{flex-direction: row;}
-      .flex-col-reverse{flex-direction: column-reverse;}
-      .flex-row-reverse{flex-direction: row-reverse;}
-
-      .w-20{width: 20%;}
-      .w-30{width: 30%;}
-      .w-40{width: 40%;}
-      .w-50{width: 49%;}
-      .w-60{width: 60%;}
-      .w-80{width: 80%;}
-      .w-90{width: 90%;}
-      .w-100{width: 100%;}
-      .min-w-420px{min-width: 420px;}
-
-      .h-50{height: 50%;}
-      .h-80{height: 80%;}
-      .h-100{height: 100%;}
-      .h-100px{height: 100px;}
-
-      .min-h-0{min-height: 0;}
-      .min-h-full{min-height: 100%;}
-      .min-h-screen{min-height: 100vh;}
-      .min-h-100px{min-height: 100px;}
-
-
-      .z-100{z-index: 100;}
-      .z-200{z-index: 200;}
-      .z-300{z-index: 300;}
-      .z-400{z-index: 400;}
-
-      .radius-5{border-radius: 5px;}
-      .radius-10{border-radius: 10px;}
-      .radius-20{border-radius: 20px;}
-
-      .email {
-         min-width: 980px;
-         width: 100%;
-         max-width: 1024px;
-         margin: 0 auto;
-         position: relative;
-         background-image: url('images/background.png');
-         background-color: #fafafa;
-         background-size: cover;
-         background-position: bottom center;
+   
+      .um_01 {
+         top: 1017px;
+         left: 97px;
+         width: 700px;
+         height: 110px;
       }
-
-      .header, .footer{
-         width: 100%;
-         height: auto;
-         margin: 0px;
-         padding: 0px;
-         line-height: 0px;
+   
+      .um_02 {
+         top: 1149px;
+         left: 97px;
+         width: 700px;
+         height: 110px;
       }
-
-      .content {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-         align-items: center;
-         padding: 20px 60px 0px 60px;
+   
+      .um_03 {
+        top: 1290px;
+         left: 97px;
+         width: 700px;
+         height: 110px;
       }
-
-      ul li {
-         margin: 10px 0;
+   
+      .link_safe {
+         top: 1838px;
+         left: 603px;
+         width: 194px;
+         height: 17px;
       }
-      .list-none {
-         list-style: none;
+   
+      .politica_privacidad {
+         top: 1885px;
+         left: 212px;
+         width: 145px;
+         height: 25px;
       }
-
-      .footer {
-         position: relative;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
+   
+      .terminos_uso {
+         top: 1885px;
+         left: 368px;
+         width: 115px;
+         height: 25px;
       }
-      .enlaces {
-         margin: 20px 0px;
-         line-height: 1;
+   
+      .cancelar_suscripción {
+         top: 1885px;
+         left: 494px;
+         width: 145px;
+         height: 25px;
       }
-      .enlaces a {
-         padding: 0px 10px;
+   
+      .contacto {
+         top: 1885px;
+         left: 652px;
+         width: 65px;
+         height: 25px;
       }
-
    </style>
-</head>
-<body>
-
-   <div class="email">
-      <div class="w-100 text-center">
-         <img src="images/header.png" alt="Header">
-      </div>
-      <div class="header flex justify-center items-start relative">
-         <div class="px-5">
-            <h3 class="text-white font-sm font-light  leading-tight text-center">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
-            <p class="font-xl font-bold text-center leading-tight px-5 text-white">
-            Manejo centrado en el paciente
-            </p>
-         </div>
-      </div>
-     
-      <div class="w-100 text-center">
-         <img src="images/banner.png" alt="Banner">
-      </div>
-
-      <div class="content">
-
-         <div class="w-100 text-center">
-            <p class="text-white font-lg font-bold leading-tight px-5 mb-5">
-               Expertos hablan sobre atención centrada en el
-               paciente: El poder de la colaboración
-               multidisciplinaria en el manejo a largo plazo
-               cáncer de próstata
-            </p>
-         </div>
-
-
-         <div class="w-100 flex flex-row flex-wrap justify-center items-start relative my-1 mt-3">
-            <!-- <div class="w-50 min-w-420px text-center border-r border-white"> -->
-               <a class="my-2 w-80 sombra-img" href="https://www.universomedico.com.co/contenidos/97ed152f-1487-4eeb-b267-9b5d925de250?token=775d9dbf-8b10-4453-a1ce-6ad7e7cde045" target="_blank" rel="noopener noreferrer">
-                  <img src="images/btn1.png" alt="Enlace video mHSPC Throwdown: Doublet, Triplet,Quadruplet What's Your Combo?">
-               </a>
-
-               <a class="my-2 w-80 sombra-img" href="https://www.universomedico.com.co/contenidos/7962242a-a5fe-4b05-9bc0-0900c487826d?token=d52c3c6f-a1e9-4064-a13a-a0be5f6eb8ce" target="_blank" rel="noopener noreferrer">
-                  <img src="images/btn2.png" alt="Enlace video de “How RWE can support daily clinical decision making:DEAR data and Healthcare cost analysis on nmCRPC">
-               </a>
-
-               <a class="my-2 w-80 sombra-img" href="https://www.universomedico.com.co/contenidos/2f8f5bff-dd73-4424-bc14-4f856a21be35?token=691b6699-48bf-49f9-8b62-41d795f1eb83" target="_blank" rel="noopener noreferrer">
-                  <img src="images/btn3.png" alt="Enlace video de Workshop Challenging mHSPC cases">
-               </a>
-            </div>
-
-           <div class="w-100 mt-4">
-            <p class="text-white font-sm font-light leading-tight px-5"> Esperamos que encuentre estas presentaciones enriquecedoras y que le brinden información valiosa, incluso a distancia. No dude en ponerse en contacto si necesita más información o asistencia </p>
-            <p class="text-white font-sm font-light leading-tight px-5"> ¡Le agradecemos su atención y esperamos que disfrute de las charlas seleccionadas</p>
-            <p class="text-white font-sm font-bold  leading-tight px-5">Atentamente,</p>
-            <p class="text-white font-md font-bold  leading-tight px-5">Cordial saludo,<br>{{userName}}</p>
-         </div>
-
-         <div class="w-100 mt-3 flex flex-row flex-wrap justify-center items-center relative">
-            <article class="w-100 text-white font-light font-xxs leading-tight text-justify">
-               <p class="font-regular text-center font-xxs my-0 opacity-75">PP-NUB-BR-0365-1 | Septiembre 2024</p>
-               <p class="font-regular text-center font-xxs my-0 opacity-75">Para México: Uso exclusivo para profesionales de la salud. Información confidencial. Prohibida su reproducción.</p>
-               <p class="font-regular text-center font-xxs opacity-75">Para Guatemala: Material Técnico/Científico para uso exclusivo del Profesional Médico.</p>
-               <p class="font-regular text-center font-xxs opacity-75 my-0">Material Técnico/Científico dirigido exclusivamente a Profesionales
-                  de la salud en capacidad de prescribir medicamentos.</p>
-               <p class="font-regular text-center font-xxs opacity-75 my-0">Venta bajo prescripción médica. Consulte a su médico. Todo medicamento posee eventos secundarios.</p>
-               <p class="font-regular text-center font-xxs opacity-75 my-0">Este medicamento requiere receta médica. En caso de duda consulte a su médico o farmacéutico.</p>
-               <p class="font-regular text-center font-xxs opacity-75 my-0">Si desea informar o reportar un evento adverso o un reclamo técnico de producto asociado a un producto Bayer, por favor, póngase en contacto con</p>
-               <p class="font-regular text-center font-xxs my-0"> <span class="opacity-75">su médico o profesional de la salud, su autoridad sanitaria local y/o dirija sus comentarios en:</span> 
-                  <a class="font-bold opacity-100" href="https://safetrack-public.bayer.com/" target="_blank">https://safetrack-public.bayer.com/</a></p>
-            </article>
-         </div>
-      </div>
-<hr class="mx-5 my-3">
-      <div class="footer">
-         <div class="enlaces text-white font-regular">
-            <a class="" href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank">Política de privacidad</a>
-            <a class="border-x border-white" href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank">Términos de uso</a>
-            <a class="border-r border-white" href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai" target="_blank">Cancelar suscripción</a>
-            <a href="" target="_blank">Contacto</a>
-         </div>
-      </div>
-   </div>
-</body>
+   </head>
+   
+   <body>
+      <img src="images/email.jpg" alt="dear">
+      <a href="https://www.universomedico.com.co/contenidos/97ed152f-1487-4eeb-b267-9b5d925de250?token=775d9dbf-8b10-4453-a1ce-6ad7e7cde045"target="_blank" class="um_01"></a>
+      <a href="https://www.universomedico.com.co/contenidos/7962242a-a5fe-4b05-9bc0-0900c487826d?token=d52c3c6f-a1e9-4064-a13a-a0be5f6eb8ce"target="_blank" class="um_02"></a>
+      <a href="https://www.universomedico.com.co/contenidos/2f8f5bff-dd73-4424-bc14-4f856a21be35?token=691b6699-48bf-49f9-8b62-41d795f1eb83"target="_blank" class="um_03"></a>
+      <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
+      <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank"
+         class="politica_privacidad"></a>
+      <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank"
+         class="terminos_uso"></a>
+      <a href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai"
+         target="_blank" class="cancelar_suscripción"></a>
+      <a href="http://" target="_blank" class="contacto"></a>
+   </body>
 </html>
