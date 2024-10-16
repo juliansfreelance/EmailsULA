@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,6 @@
    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
    <meta name="format-detection" content="telephone=no" />
    <meta name="msapplication-tap-highlight" content="no" />
-   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
    <meta name="apple-mobile-web-app-capable" content="yes">
    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
    <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
@@ -15,119 +14,141 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
    <title>Approved Email Estudio DEAR</title>
-   <!--[if (mso) | (mso 16) | (gte mso 9) | (IE)]>
-      <style> a {  text-decoration: none;  } table{ border-collapse: collapse;}</style>
-   <![endif]-->
-
-   <!--[if (IE)]>
-      <style> table{ min-height: 0!important;} sup,sub{font-size: 50%!important;} sup{vertical-align:1.2em!important;}</style>
-   <![endif]-->
-
-   <!--[if gte mso 9]>
-      <xml>
-         <o:OfficeDocumentSettings>
-            <o:AllowPNG/>
-            <o:PixelsPerInch>96</o:PixelsPerInch>
-         </o:OfficeDocumentSettings>
-      </xml>
-   <![endif]-->
    <style>
-      * {
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
          -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
          -webkit-font-smoothing: antialiased;
          user-select: none;
       }
-
+   
+      @media (prefers-reduced-motion: no-preference) {
+         :root {
+            scroll-behavior: smooth;
+         }
+      }
+   
       html {
          background-color: #FFFFFF;
       }
-
+   
       body {
+         font-family: "Poppins", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+         line-height: 1.5;
          background: #FAFAFA;
          margin: 0 auto;
          padding: 0 0 0 0;
          width: 900px;
          position: relative;
       }
-
-      img{
+   
+      img {
          width: 100%;
          height: auto;
       }
-      a{
+   
+      a {
          position: absolute;
-         /* background: #000; */
-         /* opacity: 0.5; */
+         background: #000;
+         opacity: 0.5;
       }
+   
       .dear_asco {
          top: 1280px;
          left: 105px;
          width: 155px;
          height: 95px;
       }
+   
       .qr_colombia {
          top: 1955px;
          left: 545px;
          width: 115px;
          height: 115px;
       }
+   
       .qr_peru {
          top: 1955px;
          left: 710px;
          width: 115px;
          height: 115px;
       }
+   
       .qr_ecuador {
          top: 2135px;
          left: 545px;
          width: 115px;
          height: 115px;
       }
+   
       .url_bayer {
          top: 2095px;
          left: 695px;
          width: 150px;
          height: 25px;
       }
+   
       .politica_privacidad {
          top: 2395px;
          left: 180px;
          width: 152px;
          height: 25px;
       }
+   
       .terminos_uso {
          top: 2395px;
          left: 340px;
          width: 122px;
          height: 25px;
       }
+   
       .cancelar_suscripción {
          top: 2395px;
          left: 470px;
          width: 147px;
          height: 25px;
       }
+   
       .contacto {
          top: 2395px;
          left: 627px;
          width: 70px;
          height: 25px;
       }
+   
+      .nombre {
+         position: absolute;
+         /* background: #000;
+         opacity: 0.5; */
+         font-size: 22px;
+      }
+   
+      .nombre {
+         top: 245px;
+         left: 380px;
+         color: #223C78;
+      }
    </style>
 </head>
 <body>
    <img src="images/email.jpg" alt="dear">
-   <a href="{$1460648}" target="_blank" class="dear_asco"></a>
-   <a href="https://drive.google.com/drive/folders/1F8F_98MABe7cMY_zH-5-Zp2a3LNKDEt1?usp=sharing" target="_blank" class="qr_colombia"></a>
-   <a href="https://drive.google.com/drive/folders/1CJZunMIix38HpXg54WTdVb2eJ6mtsRvY?usp=share_link" target="_blank" class="qr_peru"></a>
-   <a href="https://drive.google.com/drive/folders/1vTDtP-o8ffWNZTzejcPn8MhpxmbOMTDC?usp=sharing" target="_blank" class="qr_ecuador"></a>
+   <h3 class="nombre">{{accFname}} {{accLname}}</h3>
+   <a href="{{$2455479}}" target="_blank" class="dear_asco"></a>
+   <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NubeqaCO.pdf" target="_blank" class="qr_colombia"></a>
+   <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NUBEQAPeru.pdf" target="_blank" class="qr_peru"></a>
+   <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NubeqaECUADOR.pdf" target="_blank" class="qr_ecuador"></a>
    <a href="https://go.bayer.com/nubeqa" target="_blank" class="url_bayer"></a>
+
    <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad"></a>
    <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso"></a>
-   <a href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai" target="_blank" class="cancelar_suscripción"></a>
-   <a href="http://" target="_blank" class="contacto"></a>
+   <a href="https://dps.bayer.com/es/unsubscribe?CustomerID=%7b%7bAccount.Id%7d%7d&EmailAddress=%7b%7bEmailAddressUnsub%7d%7d&Product=%7b%7bApproved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c%7d%7d&Channel=Approved%20E-mail" target="_blank" class="cancelar_suscripción"></a>
+   <a href="https://www.bayer.com/en/contact-us?autotranslate=es" target="_blank" class="contacto"></a>
 </body>
 </html>
