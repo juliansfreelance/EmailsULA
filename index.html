@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="es">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +11,46 @@
    <meta name="apple-mobile-web-app-capable" content="yes">
    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
    <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-   <meta name="description" content="En nombre de todo el equipo Bayer®, queremos expresar nuestro más sincero agradecimiento por su participación en Onconnecta 2024 celebrado en Cartagena el pasado 21 y 22 de junio. Su presencia y contribución fueron fundamentales para el éxito de este evento médico." />
+   <meta name="description" content="AE Onconnecta charlas AE 1" />
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
    <title>AE Onconnecta charlas AE 1</title>
 
    <style>
-      * {
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
          -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
          -webkit-font-smoothing: antialiased;
          user-select: none;
       }
-   
+
+      @media (prefers-reduced-motion: no-preference) {
+         :root {
+            scroll-behavior: smooth;
+         }
+      }
+
       html {
          background-color: #FFFFFF;
       }
-   
+
       body {
+         font-family: "Poppins", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+         line-height: 1.5;
          background: #FAFAFA;
          margin: 0 auto;
          padding: 0 0 0 0;
          width: 900px;
          position: relative;
       }
-   
+
       img {
          width: 100%;
          height: auto;
@@ -45,8 +58,8 @@
    
       a {
          position: absolute;
-         /* background: #000; */
-         /* opacity: 0.5; */
+         /* background: #000;
+         opacity: 0.5; */
       }
       .um_01 {
          top: 955px;
@@ -99,21 +112,39 @@
          width: 65px;
          height: 25px;
       }
+      .nombre, .saludo {
+         position: absolute;
+         /* background: #000;
+         opacity: 0.5; */
+      }
+      .nombre {
+         top: 155px;
+         left: 242px;
+         color: #fafafa;
+         font-size: 16px;
+      }
+      .saludo {
+         top: 1555px;
+         left: 63px;
+         font-size: 18px;
+         color: #fafafa;
+      }
    </style>
    </head>
    
    <body>
       <img src="images/email.jpg" alt="dear">
+      <h3 class="nombre">{{accFname}} {{accLname}}</h3>
+      <h3 class="saludo">{{userName}}</h3>
+
       <a href="https://www.universomedico.com.co/contenidos/18c1b0f2-ac8b-4127-8ae3-ee5c8743afd9?token=615b9462-685e-466b-9c3b-68c75fb5b2f6" target="_blank" class="um_01"></a>
       <a href="https://www.universomedico.com.co/contenidos/547ed941-9d39-4e9d-95a0-12fbed0a9cd4?token=5fbb87e9-23ee-47fe-919a-a924fbe023be" target="_blank" class="um_02"></a>
       <a href="https://www.universomedico.com.co/contenidos/fa89f834-da28-4376-a417-e2f5d71cb1ea?token=9fe111d3-eb6b-4836-bf15-954866e01546" target="_blank" class="um_03"></a>
       <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
-      <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank"
-         class="politica_privacidad"></a>
-      <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank"
-         class="terminos_uso"></a>
-      <a href="https://dps.bayer.com/es/unsubscribe?CustomerID={{Account.Id}}&EmailAddress={{EmailAddressUnsub}}&Product={{Approved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c}}&Channel=Approved%20E-mai"
-         target="_blank" class="cancelar_suscripción"></a>
-      <a href="http://" target="_blank" class="contacto"></a>
+
+      <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad"></a>
+      <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso"></a>
+      <a href="https://dps.bayer.com/es/unsubscribe?CustomerID=%7b%7bAccount.Id%7d%7d&EmailAddress=%7b%7bEmailAddressUnsub%7d%7d&Product=%7b%7bApproved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c%7d%7d&Channel=Approved%20E-mail" target="_blank" class="cancelar_suscripción"></a>
+      <a href="https://www.bayer.com/en/contact-us?autotranslate=es" target="_blank" class="contacto"></a>
    </body>
 </html>
