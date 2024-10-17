@@ -54,22 +54,26 @@
       }
       a {
          position: absolute;
-         /* background: #000; */
-         /* opacity: 0.5; */
+         background: #000;
+         opacity: 0.5;
       }
-      .logo_01 {
+      .video {
+         top: 0;
+         left: 0;
+         width: 900px;
+         height: 506px;
+      }
+      .qr_ecuador{
          top: 1993px;
          left: 275px;
          width: 135px;
          height: 135px;
-         border-radius: 100%;
       }
-      .logo_02 {
+      .qr_peru {
          top: 1993px;
          left: 472px;
          width: 135px;
          height: 135px;
-         border-radius: 100%;
       }
       .link_bayer {
          top: 2255px;
@@ -109,8 +113,8 @@
       }
       .nombre, .saludo {
          position: absolute;
-         background: #000;
-         opacity: 0.5;
+         /* background: #000;
+         opacity: 0.5; */
          font-size: 22px;
       }
       .nombre {
@@ -119,9 +123,9 @@
          color: #363636;
       }
       .saludo {
-         top: 1347px;
+         top: 1647px;
          left: 55px;
-         font-size: 20px;
+         font-size: 16px;
          color: #363636;
       }
    </style>
@@ -129,12 +133,17 @@
 
    <body>
       <img src="images/email.jpg" alt="dear">
-      <h3 class="nombre">{{accFname}} {{accLname}}</h3>
-      <!-- <h3 class="saludo">{{userName}}</h3> -->
-      <a href="" target="_blank" class="logo_01"></a>
-      <a href="" target="_blank" class="logo_02"></a>
+      <!-- <h3 class="nombre">{{accFname}} {{accLname}}</h3> -->
+      <h3 class="saludo">{{userName}}<br>{{User.MobilePhone}}<br>{{userEmailAddress}}</h3>
+      
+      <a href="" target="_blank" class="video"></a>
+
+      <a href="" target="_blank" class="qr_ecuador"></a>
+      <a href="" target="_blank" class="qr_peru"></a>
+
       <a href="https://go.bayer.com/FirialtaPE " target="_blank" class="link_bayer"></a>
       <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
+
       <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso"></a>
       <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad"></a>
       <a href="https://dps.bayer.com/es/unsubscribe?CustomerID=%7b%7bAccount.Id%7d%7d&EmailAddress=%7b%7bEmailAddressUnsub%7d%7d&Product=%7b%7bApproved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c%7d%7d&Channel=Approved%20E-mail" target="_blank" class="cancelar_suscripción"></a>
