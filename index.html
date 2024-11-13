@@ -10,7 +10,7 @@
    <meta name="apple-mobile-web-app-capable" content="yes">
    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
    <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-   <meta name="description" content="Curso Hemofilia" />
+   <meta name="description" content="regorafenid" />
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,8 +54,8 @@
       }
       a {
          position: absolute;
-         /* background: #000;
-         opacity: 0.5;  */
+         //*background: #000;
+         opacity: 0.5;*//  
       }
       .qr_ecuador {
          top: 4435px;
@@ -134,50 +134,51 @@
          height: 11px;
       }
       .link_safe {
-         top: 4533px;
-         left: 275px;
-         width: 106px;
+         top: 4480px;
+         left: 485px;
+         width: 142px;
          height: 9px;
          }
       .terminos_uso {
-         top: 4563px;
+         top: 4506px;
          left: 279px;
          width: 80px;
          height: 14px;
       }
       .politica_privacidad {
-         top: 4563px;
+         top: 4506px;
          left: 364px;
          width: 103px;
          height: 14px;
       }
       .cancelar_suscripción {
-         top: 4563px;
+         top: 4506px;
          left: 471px;
          width: 99px;
          height: 14px;
       }
       .contacto {
-         top: 4563px;
+         top: 4506px;
          left: 574px;
          width: 47px;
          height: 14px;
       }
       
       .nombre, .saludo {
-         position: absolute; 
-          /* background: #000;
-         opacity: 0.5;    */
-         font-size: 22p
+         position: absolute;
+        //* background: #000;
+         opacity: 0.5;*//
+       font-size: 22px 
       }
       .nombre {
-         top: 3px;
+         top: -8px;
          left: -20px;
          width: 100%;
-         color: #575757;
+         color: #575656;
          text-align: left;
          font-size: 26px;
          padding-left: 45px;
+         z-index: 2;
       }
       .saludo {
          top: 13px;
@@ -186,33 +187,40 @@
          color: #575757;
          font-weight: 700;
    }
+   .caja {
+      top: 17px;
+      width: 100%;
+      height: 40px;
+      background-color: #FFFFFF;
+      position: absolute;
+      overflow: hidden;        /* Oculta cualquier contenido desbordado */
+    }
    </style>
    </head>
 
    <body>
       <img src="images/email.jpg" alt="firialta">
-      <!-- <h3 class="nombre">Estimado Dr(a): {{accFname}} {{accLname}}</h3> -->
-      <h3 class="nombre">Estimado Dr(a):</h3>
-      <h3 class="saludo">{{userName}}</h3>
-      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/StivargaEcu.pdf" target="_blank" class="qr_ecuador"></a>
+      <h3 class="nombre">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
+      <!-- <h3 class="nombre">Estimado Dr(a):</h3>
+      <h3 class="saludo">{{userName}}</h3> -->
+      <!-- <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/StivargaEcu.pdf" target="_blank" class="qr_ecuador"></a>
       <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/StivargaPERU.pdf" target="_blank" class="qr_peru"></a>
 
-   <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/StivargaCO.pdf" target="_blank" class="qr_colombia"></a>
+   <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/StivargaCO.pdf" target="_blank" class="qr_colombia"></a> -->
 
       <!-- <a href="https://acortar.link/zl3ftW" target="_blank" class="link_android"></a> -->
       <!-- <a href="https://acortar.link/T3RAHD" target="_blank" class="link_ios"></a> -->
 
    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4936193/pdf/12885_2016_Article_2440.pdf" target="_blank"  class="link_Rebecca"></a>
-   <a href="https://www.sciencedirect.com/science/article/abs/pii/S153300281000736" target="_blank" class="reality"></a>
+   <a href="https://www.sciencedirect.com/science/article/abs/pii/S1533002821000736" target="_blank" class="reality"></a>
    <a href="https://www.annalsofoncology.org/action/showPdf?pii=S0923-7534%2820%2940554-X" target="_blank" class="link_annalsof"></a>
 
-
-
+   <div class="caja"></div>
 
 <!-- <a href="https://www.youtube.com/watch?v=J856gPaysW0" target="_blank" class="link_Video"></a> -->
 <a href="https://www.gotoper.com/courses/patient-provider-caregiver-connection-individualizing-care-in-hemophilia-a-to-optimize-joint-health-and-prevent-synovitis?utm_medium=Email&utm_source=Approved-email" target="_blank" class="link_CME"></a>
 
-      <a href="https://go.bayer.com/StivrgaPE" target="_blank" class="link_bayer"></a>
+      <!-- <a href="https://go.bayer.com/StivrgaPE" target="_blank" class="link_bayer"></a> -->
       <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
       <a href="https://www.universomedico.com.co/contenidos/0cabf8f6-ff77-45d0-bfa3-83a66c06bbf5?token=0a7d21f7-ec19-48f5-83c8-cc600cd60d37"target="_blank" class="btn_link_video"></a>
 
