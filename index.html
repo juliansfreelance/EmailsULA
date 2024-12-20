@@ -67,6 +67,25 @@
          font-size: 12px;
 }
       
+.nombre, .saludo {
+   position: absolute;
+   /*background: #000;*/
+  /* opacity: 0.5;*/
+ font-size: 22px;
+ color: black;
+ text-align: left;
+ font-weight: 900; 
+}
+.nombre {
+   top: 95px;
+   left: 252px;
+}
+
+.saludo {
+   top: 1236px;
+   left: 60px;
+   color: #372a59;
+}
 
       .link_safe {
          top: 1417px;
@@ -120,7 +139,7 @@
 
 
       .footer {
-         background-color: #013852;
+         background-color:white;
          position: absolute;
          display: flex;
          bottom: 17px;
@@ -133,12 +152,12 @@
          align-items: center;
       }
       .footer a {
-         color: #fafafa;
+         color: #008a99;
          font-size: 10px;
          text-decoration: none;
          margin: 0px;
          padding: 0px 10px;
-         border: 1px solid #fafafa;
+         border: 1px solid #008a99;
          border-bottom: 0px;
          border-top: 0px;
          margin-left: -1px;
@@ -171,11 +190,14 @@
 
    <div class="caja"></div>
 
-       <!-- <p class="saludo">
-         To: {{accFname}} {{accLname}}<br>
-         From: {{userName}}<br>
-         Subject: Ventavis®, ahora en dos presentaciones para uso con nebulizador
-      </p>  -->
+   <p class="saludo">
+      {{userName}}
+</p>
+  <p class="nombre">
+      {{accFname}} {{accLname}}<br>
+
+</p>
+
 
 
 
