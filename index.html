@@ -32,11 +32,9 @@
             scroll-behavior: smooth;
          }
       }
-   
       html {
          background-color: #FFFFFF;
       }
-   
       body {
          font-family: "Nunito Sans", sans-serif;
          font-weight: 400;
@@ -52,87 +50,39 @@
          width: 100%;
          height: auto;
       }
-.link_safe,
-.link_medicamentos,
-.link_siu,
-.link_bayer,
-.Qr_bayer,
-.Qr_EC{
+      .link_siu,
+      .Qr_bayer{
          position: absolute;
          color:transparent;
          text-decoration: none;
-        /*background-color: rgb(255, 0, 0, 0.6); */
          font-size: 12px;
-}
-      
-.nombre, .saludo {
-   position: absolute;
-   /*background: #000;*/
- /* opacity: 0.5;*/
- font-size: 22px;
- color: #008a99;
- text-align: left;
- font-weight: 700; 
-}
-.nombre {
-   top: 164px;
-   left: 222px;
-   z-index: 1;
-   font-size: 22px;
-}
-
-.saludo {
-   top: 17px;
-   left: 89px;
-   z-index: 1;
-   font-size: 19px;
-}
-      .link_safe {
-         top: 1573px;
-         left: 174px;
-         width: 251px;
-         height: 15px;
+         /* background-color: rgb(255, 0, 0, 0.6); */
       }
-
-      .link_bayer {
-         top: 1023px;
-         left: 142px;
-         width: 263px;
-         height: 15px;
+      .nombre {
+         position: absolute;
+         left: 0px;
+         top: 164px;
+         width: 100%;
+         font-size: 22px;
+         font-weight: 700;
+         text-align: center;
+         color: #008a99;
+         z-index: 1;
+         /* background-color: rgb(255, 0, 0, 0.6); */
       }
-
-      .link_medicamentos{
-         top: 1129px;
-         left: 340px;
-         width: 352px;
-         height: 15px;
-     }
-      
       .link_siu{
          top: 1141px;
          left: 440px;
          width: 365px;
          height: 41px;
          border-radius: 20px;
-     }
-      
-
+      }
       .Qr_bayer{
          top: 1285px;
          left: 794px;
          width: 83px;
          height: 85px;
-}
-
-      .Qr_EC{
-         top: 984px;
-         left: 736px;
-         width: 91px;
-         height: 92px;
-}
-
-
-
+      }
       .footer {
          background-color: #c8d92e;
          position: absolute;
@@ -164,76 +114,15 @@
          border: 0px;
       }
 
-      .Link_video{
-         top: 1117px;
-         left: 215px;
-         width: 471px;
-         height: 86px;
-         border-radius: 3px;
-         color: transparent;
-         position: absolute;
-         background-color: black;
-         opacity: 0.5;
-         border-radius: 25px;
-      }
-
-      .cuadro{
-         position: absolute;
-         top: 0;
-         left: 64px;
-         width: 103px;
-         height: 36px;
-         background-color: white;
-       }
-
-       .caja{
-         position: absolute;
-         top: 41px;
-         left: 85px;
-         width: 90px;
-         height: 21px;
-         background-color: white;
-       }
-
    </style>
    </head>
 
    <body>
       <img src="images/email.jpg" alt="VENTAVIS">
+      <p class="nombre">Estimado Dr(a): {{accFname}} {{accLname}}</p>
 
-
-   <!-- <div class="caja"></div> -->
-
-          <!-- <p class="saludo">
-            {{userName}}
-</p> -->
-        <p class="nombre">
-          Estimado Dr(a): {{accFname}} {{accLname}}<br> 
-
-</p>
-
-<!-- <div class="cuadro"></div> -->
-
- <a href="https://go.bayer.com/prospectoMirena" target="_blank" class="Qr_bayer">QR</a>
- <a href=" " target="_blank" class="link_siu">Si</a>
-
- 
-      <!-- <a href="https://www.universomedico.com.co/contenidos/6b3081f3-68bf-443f-8247-59e8292ee6c3?token=3e1699cd-a7cc-4bee-8c6b-8db769458a72" target="_blank" class="Link_video">Video</a> -->
-     
-      <!-- <a href="https://go.bayer.com/Inscribase aquí" target="_blank" class="Qr_EC">QR</a> -->
-   
-      
-
-      <!-- <a href="https://massimple.bayer.com.ar" target="_blank" class="link_bayer">by</a> -->
-
-     
-     
-      
-      
-      <!-- <a href="https://www.medicamentosdeprimernivel.com.ar" target="_blank" class="link_medicamentos">ST</a> -->
-      <!-- <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a> -->
-
-
+      <a href="https://go.bayer.com/prospectoMirena" target="_blank" class="Qr_bayer">QR</a>
+      <a href="https://www.universomedico.com.ar/contenidos/af6f03ec-f4c8-403e-b624-248e0883bb3f?token=51c0bd45-9b86-4664-87c5-c86c79fa2845" target="_blank" class="link_siu">Si</a>
 
       <section class="footer">
          <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad">Política de privacidad</a>
