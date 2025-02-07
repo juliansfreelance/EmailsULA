@@ -10,13 +10,13 @@
    <meta name="apple-mobile-web-app-capable" content="yes">
    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
    <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-   <meta name="description" content="Mirena A Sus Pacientes" />
+   <meta name="description" content="Mirena 25 Años" />
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..16,700&display=swap" rel="stylesheet">
 
-   <title>Mirena A Sus Pacientes</title>
+   <title>Mirena 25 Años</title>
    <style>
       *,
       *::before,
@@ -54,31 +54,31 @@
       }
 .link_safe,
 .link_medicamentos,
-.link_misrx,
+.link_siu,
 .link_bayer,
-.Qr_CO,
+.Qr_bayer,
 .Qr_EC{
          position: absolute;
          color:transparent;
          text-decoration: none;
-        /* background-color: rgb(255, 0, 0, 0.6); */
+        /*background-color: rgb(255, 0, 0, 0.6); */
          font-size: 12px;
 }
       
 .nombre, .saludo {
    position: absolute;
    /*background: #000;*/
-  opacity: 0.5;
+ /* opacity: 0.5;*/
  font-size: 22px;
- color: #616161;
+ color: #008a99;
  text-align: left;
  font-weight: 700; 
 }
 .nombre {
-   top: -11px;
-   left: 67px;
+   top: 164px;
+   left: 222px;
    z-index: 1;
-   font-size: 19px;
+   font-size: 22px;
 }
 
 .saludo {
@@ -108,19 +108,20 @@
          height: 15px;
      }
       
-      .link_misrx{
-         top: 830px;
-         left: 582px;
-         width: 175px;
-         height: 18px;
+      .link_siu{
+         top: 1141px;
+         left: 440px;
+         width: 365px;
+         height: 41px;
+         border-radius: 20px;
      }
       
 
-      .Qr_CO{
-         top: 875px;
-         left: 736px;
-         width: 91px;
-         height: 90px;
+      .Qr_bayer{
+         top: 1285px;
+         left: 794px;
+         width: 83px;
+         height: 85px;
 }
 
       .Qr_EC{
@@ -133,25 +134,25 @@
 
 
       .footer {
-         background-color: white;
+         background-color: #c8d92e;
          position: absolute;
          display: flex;
-         bottom: 5px;
-         padding: 02px 0px;
-         width: 100%;
+         bottom: 6px;
+         padding: 2px 0px;
+         width: 87%;
          height: auto;
-         flex-direction: row;
+         flex-direction: row-reverse;
          flex-wrap: nowrap;
          justify-content: center;
          align-items: center;
       }
       .footer a {
-         color: #585b5c;
+         color: white;
          font-size: 16px;
          text-decoration: none;
          margin: 0px;
          padding: 0px 10px;
-         border: 1px solid #585b5c;
+         border: 1px solid white;
          border-bottom: 0px;
          border-top: 0px;
          margin-left: -1px;
@@ -171,7 +172,7 @@
          border-radius: 3px;
          color: transparent;
          position: absolute;
-         /*background-color: black;*/
+         background-color: black;
          opacity: 0.5;
          border-radius: 25px;
       }
@@ -203,19 +204,22 @@
 
    <!-- <div class="caja"></div> -->
 
-         <!-- <p class="saludo">
+          <!-- <p class="saludo">
             {{userName}}
-</p>
+</p> -->
         <p class="nombre">
-            {{accFname}} {{accLname}}<br> -->
+          Estimado Dr(a): {{accFname}} {{accLname}}<br> 
 
 </p>
 
 <!-- <div class="cuadro"></div> -->
 
+ <a href="https://go.bayer.com/prospectoMirena" target="_blank" class="Qr_bayer">QR</a>
+ <a href=" " target="_blank" class="link_siu">Si</a>
 
+ 
       <!-- <a href="https://www.universomedico.com.co/contenidos/6b3081f3-68bf-443f-8247-59e8292ee6c3?token=3e1699cd-a7cc-4bee-8c6b-8db769458a72" target="_blank" class="Link_video">Video</a> -->
-      <!-- <a href="https://go.bayer.com/mpn" target="_blank" class="Qr_CO">QR</a> -->
+     
       <!-- <a href="https://go.bayer.com/Inscribase aquí" target="_blank" class="Qr_EC">QR</a> -->
    
       
@@ -225,9 +229,9 @@
      
      
       
-      <!-- <a href="https://misrx.com.ar/" target="_blank" class="link_misrx">ST</a> -->
+      
       <!-- <a href="https://www.medicamentosdeprimernivel.com.ar" target="_blank" class="link_medicamentos">ST</a> -->
-      <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a>
+      <!-- <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a> -->
 
 
 
