@@ -55,20 +55,14 @@
       }
       a {
          position: absolute;
-          /* background: #000; */
-         /* opacity: 0.5;  */
+        /*   background: #000; 
+          opacity: 0.5; */ 
       }
-      .qr_ecuador {
-         top: 2284px;
-         left: 670px;
+      .qr_eylia{
+         top: 1815px;
+         left: 731px;
          width: 85px;
-         height: 85px;
-      }
-      .qr_peru {
-         top: 2284px;
-         left: 780px;
-         width: 85px;
-         height: 85px;
+         height: 81px;
       }
       .link_android {
          top: 1957px;
@@ -83,11 +77,11 @@
          height: 13px;
       }
       .link_Video {
-         top: 1210px;
-         left: 120px;
-         width: 650px;
-         height: 355px;
-         border-radius: 20px;
+         top: 1318px;
+         left: 87px;
+         width: 726px;
+         height: 408px;
+         border-radius: 9px;
       }
       .link_UM {
          top: 1843px;
@@ -103,9 +97,9 @@
          height: 11px;
       }
       .link_safe {
-         top: 2367px;
-         left: 40px;
-         width: 177px;
+         top: 1876px;
+         left: 321px;
+         width: 218px;
          height: 13px;
       }
       .nombre, .saludo {
@@ -115,13 +109,13 @@
          font-size: 22px;
       }
       .nombre {
-         top: 350px;
-         left: 0px;
-         width: 100%;
-         color: #C9002B;
+         top: 446px;
+         left: -174px;
+         width: 77%;
+         color: #404040;
          text-align: center;
-         font-size: 24px;
-      }
+         font-size: 34px;
+     }
       .saludo {
          top: 1347px;
          left: 55px;
@@ -131,11 +125,11 @@
       }
 
       .footer {
-         background-color: #c8d92e;
+         background-color: white;
          position: absolute;
          display: flex;
-         bottom: 6px;
-         padding: 2px 0px;
+         bottom: 12px;
+         padding: 5px 5px;
          width: 100%;
          height: auto;
          flex-direction: row;
@@ -146,15 +140,16 @@
       .footer a {
          position: relative;
          color: #363636;
-         font-size: 12px;
+         font-size: 16px;
          text-decoration: none;
          margin: 0px;
          padding: 0px 10px;
-         border: 1px solid #363636;
+         border: 1px solid black;
          border-bottom: 0px;
          border-top: 0px;
          margin-left: -1px;
          font-weight: 100;
+         font-weight: 900;
       }
       .footer a:first-child{
          border: 0px;
@@ -167,18 +162,17 @@
 
    <body>
       <img src="images/email.jpg" alt="firialta">
-      <h3 class="nombre">Estimado Dr(a): {{accFname}} {{accLname}}</h3>
+      <h3 class="nombre"> Estimado Dr(a): <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{accFname}} {{accLname}}</h3>
       <!-- <h3 class="saludo">{{userName}}</h3> -->
-      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaEC.pdf" target="_blank" class="qr_ecuador"></a>
-      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaprescribirPeru.pdf" target="_blank" class="qr_peru"></a>
+      <a href="https://go.bayer.com/prospectoEylia" target="_blank" class="qr_eylia"></a>
 
-      <a href="https://acortar.link/zl3ftW" target="_blank" class="link_android"></a>
-      <a href="https://acortar.link/T3RAHD" target="_blank" class="link_ios"></a>
 
-<a href="{{$256891}}" target="_blank" class="link_Video"></a>
-<a href="https://www.universomedico.com.co/contenidos/0cabf8f6-ff77-45d0-bfa3-83a66c06bbf5?token=0a7d21f7-ec19-48f5-83c8-cc600cd60d37" target="_blank" class="link_UM"></a>
+
+
+<a href="{{$2695662}}" target="_blank" class="link_Video"></a>
+
       
-      <a href="https://go.bayer.com/FirialtaPE " target="_blank" class="link_bayer"></a>
+      
       <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
 
       <section class="footer">
