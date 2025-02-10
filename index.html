@@ -14,7 +14,7 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
 
    <title>Único ARM no esteroideo que retrasa la progresión renal y reduce el riesgo cardiovascular en pacientes con ERD</title>
    <style>
@@ -38,15 +38,16 @@
       }
    
       body {
-         font-family: "Nunito Sans", sans-serif;
-         font-weight: 700;
-         font-style: normal;
-         line-height: 1.5;
-         background: #FAFAFA;
-         margin: 0 auto;
-         padding: 0 0 0 0;
-         width: 900px;
-         position: relative;
+      font-family: "Nunito", serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      line-height: 1;
+      background: #FAFAFA;
+      margin: 0 auto;
+      padding: 0 0 0 0;
+      width: 900px;
+      position: relative;
       }
       img {
          width: 100%;
@@ -107,30 +108,6 @@
          width: 177px;
          height: 13px;
       }
-      .terminos_uso {
-         top: 2400px;
-         left: 374px;
-         width: 93px;
-         height: 17px;
-      }
-      .politica_privacidad {
-         top: 2400px;
-         left: 245px;
-         width: 117px;
-         height: 17px;
-      }
-      .cancelar_suscripción {
-         top: 2400px;
-         left: 478px;
-         width: 115px;
-         height: 17px;
-      }
-      .contacto {
-         top: 2400px;
-         left: 605px;
-         width: 52px;
-         height: 17px;
-      }
       .nombre, .saludo {
          position: absolute;
           /* background: #000; */
@@ -152,6 +129,39 @@
          color: #363636;
          font-weight:  700;
       }
+
+      .footer {
+         background-color: #c8d92e;
+         position: absolute;
+         display: flex;
+         bottom: 6px;
+         padding: 2px 0px;
+         width: 100%;
+         height: auto;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: center;
+         align-items: center;
+      }
+      .footer a {
+         position: relative;
+         color: #363636;
+         font-size: 12px;
+         text-decoration: none;
+         margin: 0px;
+         padding: 0px 10px;
+         border: 1px solid #363636;
+         border-bottom: 0px;
+         border-top: 0px;
+         margin-left: -1px;
+         font-weight: 100;
+      }
+      .footer a:first-child{
+         border: 0px;
+      }
+      .footer a:last-child{
+         border: 0px;
+      }
    </style>
    </head>
 
@@ -165,15 +175,17 @@
       <a href="https://acortar.link/zl3ftW" target="_blank" class="link_android"></a>
       <a href="https://acortar.link/T3RAHD" target="_blank" class="link_ios"></a>
 
-<a href="https://www.youtube.com/watch?v=J856gPaysW0" target="_blank" class="link_Video"></a>
+<a href="{{$256891}}" target="_blank" class="link_Video"></a>
 <a href="https://www.universomedico.com.co/contenidos/0cabf8f6-ff77-45d0-bfa3-83a66c06bbf5?token=0a7d21f7-ec19-48f5-83c8-cc600cd60d37" target="_blank" class="link_UM"></a>
       
       <a href="https://go.bayer.com/FirialtaPE " target="_blank" class="link_bayer"></a>
       <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
 
-      <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso"></a>
-      <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad"></a>
-      <a href="https://dps.bayer.com/es/unsubscribe?CustomerID=%7b%7bAccount.Id%7d%7d&EmailAddress=%7b%7bEmailAddressUnsub%7d%7d&Product=%7b%7bApproved_Document_vod__c.Product_vod__r.BPH_Vault_Product_Brand__c%7d%7d&Channel=Approved%20E-mail" target="_blank" class="cancelar_suscripción"></a>
-      <a href="https://www.bayer.com/en/contact-us?autotranslate=es" target="_blank" class="contacto"></a>
+      <section class="footer">
+         <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad">Política de privacidad</a>
+         <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso">Términos de uso</a>
+         <a href="https://documents.eu.truman.bayer.com/co_ph/hcp/es/uns/unsubscribe_ae_commercial/?IdentityType=veeva&IdentityValue=001Qj00000R6N2PIAV&BrandID=RYqLl6L&ContentID=" target="_blank" class="cancelar_suscripción">Cancelar suscripción</a>
+         <a href="https://www.bayer.com/en/contact-us?autotranslate=es" target="_blank" class="contacto">Contacto</a>
+      </section>
    </body>
 </html>
