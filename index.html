@@ -59,14 +59,13 @@
 .Qr_CO,
 .Qr_EC,
 .Qr_PE,
-.Link_video,
+.Link_Video,
 .link_info,
-.link_Actividad,
+.link_Episodios,
 .link_update{
          position: absolute;
          color:transparent;
-         text-decoration: none;
-       /* background-color: rgb(255, 0, 0, 0.6);*/
+        /* background-color: rgb(255, 0, 0, 0.6);*/
          font-size: 12px;
 }
       
@@ -74,14 +73,15 @@
    position: absolute;
    /*background: #000;*/
  font-size: 22px;
- color: #fae6eb;
+ color: #696969;
  text-align: left;
  font-weight: 400; 
+ z-index: 1;
 }
 .nombre {
-   top: 15px;
-   left: 90px;
-   font-size: 36px;
+   top: 153px;
+   left: 192px;
+   font-size: 26px;
 }
 
 .saludo {
@@ -91,9 +91,9 @@
    font-size: 19px;
 }
       .link_safe {
-         top: 2287px;
-         left: 356px;
-         width: 185px;
+         top: 1492px;
+         left: 543px;
+         width: 176px;
          height: 11px;
       }
 
@@ -104,18 +104,20 @@
          height: 11px;
       }
 
-      .link_doi1007{
-         top: 2168px;
-         left: 504px;
-         width: 68px;
-         height: 12px;
+      .Link_Video{
+         top: 1158px;
+         left: 383px;
+         width: 153px;
+         height: 156px;
+         border-radius: 80px;
      }
       
-      .link_Actividad{
-         top: 2018px;
-         left: 287px;
-         width: 521px;
+      .link_Episodios{
+         top: 932px;
+         left: 213px;
+         width: 451px;
          height: 59px;
+         border-radius: 20px;
      }
 
       .Qr_CO{
@@ -153,8 +155,8 @@
          display: flex ;
          position: absolute;
          display: flex;
-         bottom: 0px;
-         padding: 19px 0px;
+         bottom: 7px;
+         padding: 9px 0px;
          width: 100%;
          height: auto;
          flex-direction: row;
@@ -162,21 +164,21 @@
          flex-wrap: nowrap;
          justify-content: center;
          align-items: center;
+         background: linear-gradient(to right, #d42050, #82072a);
          /*clip-path: polygon(-60% 58%, 102% 0%, 101% 141%, 0% 100%);*/
       }
       .footer a {
          position: relative;
-         top: 0px;
-         color: #64676b;
-         font-size: 13px;
+         top: -1px;
+         color: white;
+         font-size: 14px;
          text-decoration: none;
          margin: 0px;
          padding: 0px 10px;
-         border: 1px solid #64676b;
+         border: 1px solid white;
          border-bottom: 0px;
          border-top: 10px;
          margin-left: -1px;
-        
       }
       .footer a:first-child{
          border: 0px;
@@ -200,20 +202,15 @@
          height: 25px;
      }
         
-      .Link_video{
-         top: 1117px;
-         left: 215px;
-         width: 471px;
-         height: 86px;
-         border-radius: 3px;
-         color: transparent;
-         position: absolute;
-         /*background-color: black;*/
-         opacity: 0.5;
-         border-radius: 25px;
-      }
 
-
+.caja{
+   position: absolute;
+   top: 154px;
+   left: 0px;
+   width: 57pc;
+   height: 61px;
+   background-color: white;
+}
 
    </style>
    </head>
@@ -222,31 +219,34 @@
       <img src="images/email.jpg" alt="VENTAVIS">
 
 
+<div class="caja"></div>
 
          <!-- <p class="saludo">
             {{userName}} -->
 </p>
         <p class="nombre">
-            Estimado Dr(a) <br> {{accFname}} {{accLname}}<br>
+            Estimado Dr(a) {{accFname}} {{accLname}}<br>
 
 </p>
 
 
-<a href="" target="_blank" class="link_Actividad">Ac</a>
+<a href="       " target="_blank" class="link_Episodios">Ep</a>
 
+<a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a>
 
-      <!-- <a href="https://www.universomedico.com.co/contenidos/6b3081f3-68bf-443f-8247-59e8292ee6c3?token=3e1699cd-a7cc-4bee-8c6b-8db769458a72" target="_blank" class="Link_video">Video</a> -->
+ <a href="      " target="_blank" class="Link_Video">Vd</a>
+
 
       <!-- <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NubeqaCO.pdf" target="_blank" class="Qr_CO">QR</a> -->
       <!-- <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NubeqaECUADOR.pdf" target="_blank" class="Qr_EC">QR</a> -->
       <!-- <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NUBEQAPeru.pdf" target="_blank" class="Qr_PE">QR</a> -->
       
       <!-- <a href="https://go.bayer.com/NubeqaPE" target="_blank" class="link_bayer">by</a> -->
-      <!-- <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a> -->
+      
 
       <!-- <a href="http://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05-NUBEQAPerru.pdf" target="_blank" class="link_info">PH</a}> -->
       
-       <!-- <a href="https://doi.org/10.1007/s11912-023-01424-2" target="_blank" class="link_doi1007">ST</a> -->
+      
 
 
 
