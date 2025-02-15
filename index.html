@@ -66,7 +66,7 @@
          position: absolute;
          color:transparent;
          text-decoration: none;
-     /*    background-color: rgb(255, 0, 0, 0.6); */
+        /*background-color: rgb(255, 0, 0, 0.6); */
          font-size: 12px;
 }
       
@@ -75,15 +75,14 @@
    /*background: #000;*/
   opacity: 0.5;
  font-size: 22px;
- color: #616161;
+ color: black;
  text-align: left;
- font-weight: 700; 
+ font-weight: 400; 
 }
 .nombre {
-   top: -5px;
-   left: 67px;
-   z-index: 1;
-   font-size: 19px;
+   top: 129px;
+   left: 253px;
+   font-size: 24px;
 }
 
 .saludo {
@@ -93,16 +92,16 @@
    font-size: 19px;
 }
       .link_safe {
-         top: 3048px;
-         left: 107px;
-         width: 164px;
-         height: 11px;     
+         top: 2920px;
+         left: 120px;
+         width: 134px;
+         height: 11px;    
       }
 
       .link_bayer {
-         top: 2978px;
-         left: 681px;
-         width: 152px;
+         top: 2862px;
+         left: 121px;
+         width: 125px;
          height: 11px;
       }
 
@@ -121,24 +120,23 @@
       
 
       .Qr_CO{
-         top: 3113px;
-         left: 207px;
-         width: 91px;
-         height: 90px;
+         top: 2834px;
+         left: 613px;
+         width: 63px;
+         height: 63px;
 }
 
       .Qr_EC{
-         top: 3113px;
-         left: 401px;
-         width: 91px;
-         height: 92px;
+         top: 2834px;
+         left: 701px;
+         width: 63px;
+         height: 63px;
 }
       .Qr_PE {
-         position: absolute;
-         top: 3113px;
-         left: 602px;
-         width: 91px;
-         height: 92px;
+         top: 2834px;
+         left: 789px;
+         width: 63px;
+         height: 63px;
 }
 
          .link_pharmgkb{
@@ -164,27 +162,31 @@
         
 
       .footer {
-         background-color: white;
          position: absolute;
-         display: flex;
-         bottom: 5px;
-         padding: 02px 0px;
+         display: flex
+     ;
+         bottom: 7px;
+         padding: 35px 0px;
          width: 100%;
          height: auto;
          flex-direction: row;
          flex-wrap: nowrap;
          justify-content: center;
          align-items: center;
+         background: linear-gradient(to right, #22478c, #185894);
+         clip-path: polygon(0% 58%, 102% 0%, 101% 141%, 0% 100%);
       }
       .footer a {
-         color: #4f4f4f;
+         position: relative;
+         top: 17px;
+         color: white;
          font-size: 16px;
          text-decoration: none;
          margin: 0px;
          padding: 0px 10px;
-         border: 1px solid #4f4f4f;
+         border: 1px solid white;
          border-bottom: 0px;
-         border-top: 0px;
+         border-top: 10px;
          margin-left: -1px;
       }
       .footer a:first-child{
@@ -232,33 +234,34 @@
       <img src="images/email.jpg" alt="VENTAVIS">
 
 
-   <div class="caja"></div>
 
-         <p class="saludo">
-            {{userName}}
+         <!-- <p class="saludo">
+            {{userName}} -->
 </p>
         <p class="nombre">
-            {{accFname}} {{accLname}}<br>
+            Estimado Dr(a) {{accFname}} {{accLname}}<br>
 
 </p>
 
-<div class="cuadro"></div>
+
 
 
       <!-- <a href="https://www.universomedico.com.co/contenidos/6b3081f3-68bf-443f-8247-59e8292ee6c3?token=3e1699cd-a7cc-4bee-8c6b-8db769458a72" target="_blank" class="Link_video">Video</a> -->
-      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NexavarCO.pdf" target="_blank" class="Qr_CO">QR</a>
-      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NexavarEcuador.pdf" target="_blank" class="Qr_EC">QR</a>
-      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NexavaPeru.pdf" target="_blank" class="Qr_PE">QR</a>
+      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NubeqaCO.pdf" target="_blank" class="Qr_CO">QR</a>
+      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NubeqaECUADOR.pdf" target="_blank" class="Qr_EC">QR</a>
+      <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/NUBEQAPeru.pdf" target="_blank" class="Qr_PE">QR</a>
       
 
-      <a href="https://go.bayer.com/NexavarPE" target="_blank" class="link_bayer">by</a>
-      <a href="http://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm389370.pdf" target="_blank" class="link_pharmgkb">PH</a>
-      <a href="https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+1124+de+2016.pdf/97ec5b74-0101-09a1-9eb1-d7549a5bd8e2?t=1540931891213" target="_blank" class="link_invima">IV</a>
-      <a href="https://www.uptodate.com/contents/sorafenib-drug-information?search=sorafenib&source=panel_search_result&selectedTitle=1~118&usage_type=panel&kp_tab=drug_general&display_rank=1#F232546" target="_blank" class="link_update">UD</a>
-      
-      <a href="https://opm-digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_digemid">ST</a>
-      <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_osbservatorio">ST</a>
+      <a href="https://go.bayer.com/NubeqaPE" target="_blank" class="link_bayer">by</a>
       <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a>
+
+      <!-- <a href="http://www.fda.gov/downloads/drugs/guidancecomplianceregulatoryinformation/guidances/ucm389370.pdf" target="_blank" class="link_pharmgkb">PH</a> -->
+      <!-- <a href="https://www.invima.gov.co/documents/20143/453029/Resoluci%C3%B3n+1124+de+2016.pdf/97ec5b74-0101-09a1-9eb1-d7549a5bd8e2?t=1540931891213" target="_blank" class="link_invima">IV</a> -->
+      <!-- <a href="https://www.uptodate.com/contents/sorafenib-drug-information?search=sorafenib&source=panel_search_result&selectedTitle=1~118&usage_type=panel&kp_tab=drug_general&display_rank=1#F232546" target="_blank" class="link_update">UD</a> -->
+      
+      <!-- <a href="https://opm-digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_digemid">ST</a> -->
+      <!-- <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_osbservatorio">ST</a> -->
+      
 
 
 
