@@ -26,17 +26,14 @@
          -webkit-font-smoothing: antialiased;
          user-select: none;
       }
-
       @media (prefers-reduced-motion: no-preference) {
          :root {
             scroll-behavior: smooth;
          }
       }
-   
       html {
          background-color: #FFFFFF;
       }
-   
       body {
          font-family: "Nunito Sans", sans-serif;
          font-weight: 400;
@@ -52,71 +49,34 @@
          width: 100%;
          height: auto;
       }
-.link_safe,
-.link_osbservatorio,
-.link_digemid,
-.link_bayer,
-.Qr_CO,
-.Qr_EC,
-.Qr_PE,
-.Link_video,
-.link_pharmgkb,
-.link_invima,
-.link_update,
-.link_pharmgkb2{
+      header {
+         position: absolute;
+         width: 100%;
+         height: auto;
+         top: 24px;
+         left: 0px;
+      }
+      header p {
+         font-size: 18px;
+         color: #808080;
+         text-align: left;
+         font-weight: 400;
+         margin: 0;
+         padding: 0;
+         padding-left: 35px;
+         line-height: 1.2;
+      }
+      .link_safe, .Link_video {
+         font-size: 12px;
          position: absolute;
          color:transparent;
          text-decoration: none;
-         /*background-color: rgb(255, 0, 0, 0.6);*/ 
-         font-size: 12px;
-}
-      
-.nombre, .saludo {
-   position: absolute;
-   /*background: #000;*/
-   opacity: 0.8;
- font-size: 22px;
- color: #808080;
- text-align: left;
- font-weight: 400; 
-}
-.nombre {
-   top: 6px;
-   left: 57px;
-   z-index: 1;
-   font-size: 16px;
-}
-
-.saludo {
-   top: 28px;
-   left: 79px;
-   z-index: 1;
-   font-size: 16px;
-}
+         /* background-color: rgb(255, 0, 0, 0.6); */
+      }
       .link_safe {
-         top: 1843px;
-         left: 129px;
+         top: 1844px;
+         left: 130px;
          width: 172px;
-         height: 12px;;
-      }
-
-      .link_bayer {
-         top: 2767px;
-         left: 681px;
-         width: 152px;
-         height: 11px;
-      }
-
-      .link_osbservatorio{
-         top: 2804px;
-         left: 358px;
-         width: 303px;
-         height: 13px;
-      }
-      .link_digemid{
-         top: 2790px;
-         left: 597px;
-         width: 273px;
          height: 12px;
       }
       .Link_video {
@@ -126,23 +86,20 @@
          height: 648px;
          opacity: 0.5;
          border-radius: 22px;
-   }
-
+      }
       .footer {
          background-color: white;
          position: absolute;
          display: flex;
-         bottom: 36px;
          padding: 4px 1px;
          width: 100%;
          height: auto;
-         bottom: 36px;
+         bottom: 34px;
          left: 0px;
          flex-direction: row;
          flex-wrap: nowrap;
          justify-content: center;
          align-items: center;
-         left: 27px;
       }
       .footer a {
          color: #611344;
@@ -155,16 +112,6 @@
       .footer a:last-child{
          border: 0px;
       }
-
-      .Link_video{
-         top: 1255px;
-         left: 379px;
-         width: 137px;
-         height: 138px;
-         opacity: 0.5;
-         border-radius: 70px;
-      }
-
    </style>
 </head>
 
