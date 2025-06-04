@@ -1,155 +1,451 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-   <meta name="format-detection" content="telephone=no" />
-   <meta name="msapplication-tap-highlight" content="no" />
-   <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-   <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-   <meta name="description" content="El ARM no esteroideo que retrasa la progresión renal y reduce el riesgo cardiovascular en pacientes con ERD" />
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..16,700&display=swap" rel="stylesheet">
-
-   <title>El ARM no esteroideo que retrasa la progresión renal y reduce el riesgo cardiovascular en pacientes con ERD</title>
-   <style>
-      *,
-      *::before,
-      *::after {
-         box-sizing: border-box;
-         -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-         -webkit-font-smoothing: antialiased;
-         user-select: none;
-      }
-
-      @media (prefers-reduced-motion: no-preference) {
-         :root {
-            scroll-behavior: smooth;
-         }
-      }
-   
-      html {
-         background-color: #FFFFFF;
-      }
-   
-      body {
-         font-family: "Nunito Sans", sans-serif;
-         font-weight: 400;
-         font-style: normal;
-         line-height: 1.5;
-         background: #FAFAFA;
-         margin: 0 auto;
-         padding: 0 0 0 0;
-         width: 900px;
-         position: relative;
-      }
-      img {
-         width: 100%;
-         height: auto;
-      }
-.link_safe,
-.Link_Android,
-.link_Ios,
-.Link_Universo{
-         position: absolute;
-         color:transparent;
-        /*background-color: rgb(255, 0, 0, 0.6);*/
-         font-size: 12px;
-}
-      
-.nombre, .saludo {
-   position: absolute;
-   /*background: #000;*/
- font-size: 22px;
- color: #c20228;
- text-align: left;
- font-weight: 800; 
- z-index: 1;
-}
-.nombre {
-   top: 340px;
-   left: 168px;
-   font-size: 28px;
-}
-
-.saludo {
-         top: 25px;
-         left: 89px;
-         z-index: 1;
-         font-size: 19px;
-}
-      .link_safe {
-         top: 1206px;
-         left: 151px;
-         width: 119px;
-         height: 9px;
-}
-
-
-     .Link_Universo{
-    top: 1021px;
-    left: 304px;
-    width: 294px;
-    height: 69px;
-    border-radius: 50px;
-}
-
-      .footer {
-         position: absolute;
-         display: flex;
-         bottom: 0px;
-         padding: 15px 0px;
-         width: 100%;
-         height: auto;
-         flex-direction: row;
-         background-color: #9e2e84;
-         flex-wrap: nowrap;
-         justify-content: center;
-      align-items: center;
-         /*clip-path: polygon(-60% 58%, 102% 0%, 101% 141%, 0% 100%);*/
-      }
-      .footer a {
-            position: relative;
-            top: -1px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Data Collector</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1, h2 { color: #0056b3; }
+        .controls {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .controls button {
+            background-color: #007bff;
             color: white;
-            font-size: 15px;
-            text-decoration: none;
-            margin: -3px;
-            padding: 0px 26px;
-            border: white;
-            border-bottom: 0px;
-            border-top: 10px;
-            margin-left: 7px;
-               }
-      .footer a:first-child{
-         border: 0px;
-      }
-      .footer a:last-child{
-         border: 0px;
-      }
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .controls button:hover {
+            background-color: #0056b3;
+        }
+        .controls button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .url-input {
+            width: calc(100% - 120px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        #gameFrame {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #eee;
+            margin-top: 20px;
+        }
+        #logContainer {
+            background-color: #e9e9e9;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            max-height: 300px;
+            overflow-y: scroll;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin-top: 20px;
+        }
+        .warning {
+            color: orange;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aviator Data Collector (In-Browser)</h1>
+    <p>Este script intentará recolectar datos de rondas de Aviator directamente desde tu navegador.</p>
+    <p class="warning">
+        <strong>¡ADVERTENCIA!</strong> Los selectores del DOM (ej. `.game-multiplier-display`)
+        son altamente específicos del casino y probablemente necesiten ser ajustados manualmente
+        en el código JavaScript (en la sección `SCRIPT PRINCIPAL`).
+        Abre las herramientas de desarrollador (F12) para inspeccionar el juego.
+    </p>
+    <p class="warning">
+        Para que el almacenamiento en `localStorage` y la descarga funcionen correctamente,
+        debes abrir este archivo HTML a través de un **servidor web local** (ej. `http://localhost:8000/`).
+    </p>
 
-   </style>
-   </head>
+    <div class="controls">
+        <h2>Paso 1: Cargar el Juego Aviator</h2>
+        <input type="text" id="gameUrlInput" class="url-input" placeholder="Introduce la URL del juego Aviator aquí (ej. https://1win.com/lucky-jet)">
+        <button onclick="loadGameIntoIframe()">Cargar Juego</button>
+        <p>Una vez cargado el juego, es posible que necesites interactuar manualmente con él
+           (ej. hacer clic en la pestaña "Historial" o en rondas específicas) para que la información
+           de Provably Fair sea visible en el DOM.</p>
+    </div>
 
-   <body>
-      <img src="images/email.jpg" alt="El ARM no esteroideo que retrasa la progresión renal y reduce el riesgo cardiovascular en pacientes con ERD">
+    <iframe id="gameFrame" src="" allowfullscreen></iframe>
 
-      <!-- <p class="nombre">Estimado Dr(a) {{accFname}} {{accLname}}</p> -->
-    
-        <a href="https://bayer-content-factory.veevavault.com/ui/externalUserLandingPage?token=14605-380ece68-7c7e-4394-825f-b3508b5f634f" target="_blank" class="Link_Universo">Vd</a>
+    <div class="controls">
+        <h2>Paso 2: Control de Recolección de Datos</h2>
+        <button id="startButton" onclick="window.startAviatorCollection()">Iniciar Recolección</button>
+        <button id="stopButton" onclick="window.stopAviatorCollection()" disabled>Detener Recolección</button>
+        <button id="downloadButton" onclick="window.downloadAviatorData()">Descargar Datos</button>
+        <button id="clearButton" onclick="window.clearAviatorCollection()">Limpiar Datos</button>
+        <button onclick="window.showAviatorCollectedData()">Mostrar Datos en Consola</button>
+    </div>
 
-      <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">ST</a>
-      <section class="footer">
-         <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad">Política de privacidad</a>
-         <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso">Términos de uso</a>
-         <a href="https://documents.eu.truman.bayer.com/co_ph/hcp/es/uns/unsubscribe_ae_commercial/?IdentityType=veeva&IdentityValue=001Qj00000R6N2PIAV&BrandID=RYqLl6L&ContentID=" target="_blank" class="cancelar_suscripción">Cancelar suscripción</a>
-         <a href="https://www.bayer.com/en/contact-us?autotranslate=es" target="_blank" class="contacto">Contacto</a>
-      </section>
+    <h2>Log de Actividad</h2>
+    <pre id="logContainer"></pre>
 
-   </body>
+    <script>
+        // Función para añadir mensajes al log en la página
+        const logContainer = document.getElementById('logContainer');
+        function appendLog(message, type = 'info') {
+            const span = document.createElement('span');
+            span.textContent = `[${new Date().toLocaleTimeString()}] ${message}\n`;
+            if (type === 'warning') span.classList.add('warning');
+            if (type === 'error') span.classList.add('error');
+            logContainer.prepend(span); // Añadir al principio para ver los más recientes
+            if (logContainer.children.length > 500) { // Limitar el número de logs
+                logContainer.removeChild(logContainer.lastChild);
+            }
+        }
+
+        // Sobrescribir console.log para capturar también en el log de la página
+        const originalConsoleLog = console.log;
+        const originalConsoleWarn = console.warn;
+        const originalConsoleError = console.error;
+
+        console.log = function(...args) {
+            originalConsoleLog.apply(console, args);
+            appendLog(args.join(' '));
+        };
+        console.warn = function(...args) {
+            originalConsoleWarn.apply(console, args);
+            appendLog(args.join(' '), 'warning');
+        };
+        console.error = function(...args) {
+            originalConsoleError.apply(console, args);
+            appendLog(args.join(' '), 'error');
+        };
+
+
+        function loadGameIntoIframe() {
+            const gameUrl = document.getElementById('gameUrlInput').value;
+            const gameFrame = document.getElementById('gameFrame');
+            if (gameUrl) {
+                gameFrame.src = gameUrl;
+                appendLog(`Cargando juego desde: ${gameUrl}`);
+            } else {
+                appendLog("Por favor, introduce una URL de juego válida.", 'warning');
+            }
+        }
+
+
+        // ---------------------------------------------------------------------
+        // ------------------- SCRIPT PRINCIPAL DE RECOLECCIÓN -------------------
+        // ---------------------------------------------------------------------
+
+        // --- CONFIGURACIÓN ---
+        const STORAGE_KEY = 'aviator_round_data';
+        // Intervalo para verificar nuevas rondas (ej. cada 3 segundos)
+        const COLLECTION_INTERVAL_MS = 3000;
+
+        // --- SELECTORES DEL DOM (¡ADAPTAR ESTOS VALORES PARA TU CASINO ESPECÍFICO!) ---
+        // Estos son ejemplos hipotéticos. Necesitarás usar las herramientas de desarrollo (F12)
+        // para inspeccionar el HTML del juego Aviator dentro del iframe y encontrar los correctos.
+
+        // Ejemplo: un elemento que muestre el multiplicador de la última ronda en el historial.
+        // A menudo es un div o span dentro de un elemento de lista.
+        // Revisa la sección de "Historial" de rondas en el juego.
+        const LAST_ROUND_ITEM_SELECTOR = '.history-list-item:first-child'; // Esto es muy común.
+
+        // Si el multiplicador y el ID de ronda están en elementos separados dentro de LAST_ROUND_ITEM_SELECTOR
+        const MULTIPLIER_IN_ITEM_SELECTOR = '.multiplier-value'; // Un span/div dentro del item
+        const ROUND_ID_IN_ITEM_SELECTOR = '.round-id-value'; // Otro span/div con el ID
+
+        // Para Provably Fair: A menudo hay un botón o un enlace en el historial de rondas
+        // que al hacer clic revela los detalles de Provably Fair para esa ronda.
+        const VIEW_DETAILS_BUTTON_SELECTOR = '.history-list-item-details-button'; // O similar
+
+        // Una vez que los detalles se abren (puede ser un modal o una sección expandida),
+        // busca los elementos que contienen las semillas y el hash.
+        const SERVER_SEED_SELECTOR = '#provably-fair-server-seed';
+        const CLIENT_SEED_SELECTOR = '#provably-fair-client-seed';
+        const COMBINED_HASH_SELECTOR = '#provably-fair-combined-hash';
+        const PF_CLOSE_BUTTON_SELECTOR = '.provably-fair-modal-close'; // Si hay un botón para cerrar el modal de PF
+
+        let lastProcessedRoundId = null; // Para evitar procesar la misma ronda múltiples veces
+        let collectionInterval = null;
+        let isCollecting = false;
+
+        // --- FUNCIONES DE ALMACENAMIENTO ---
+        function loadCollectedData() {
+            try {
+                const data = localStorage.getItem(STORAGE_KEY);
+                return data ? JSON.parse(data) : [];
+            } catch (e) {
+                console.error("Error cargando datos de localStorage:", e);
+                appendLog(`Error cargando datos de localStorage: ${e.message}`, 'error');
+                return [];
+            }
+        }
+
+        function saveCollectedData(data) {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                console.log(`Datos guardados. Total de rondas: ${data.length}`);
+                appendLog(`Datos guardados. Total de rondas: ${data.length}`);
+            } catch (e) {
+                console.error("Error guardando datos en localStorage:", e);
+                appendLog(`Error guardando datos en localStorage: ${e.message}. Puede que necesites un servidor web.`, 'error');
+            }
+        }
+
+        // --- FUNCIONES DE RECOLECCIÓN ---
+
+        /**
+         * Intenta extraer datos de Provably Fair de la ronda específica.
+         * Requiere que la información sea visible en el DOM o que se pueda hacer clic para revelarla.
+         * @param {HTMLElement} roundItemElement El elemento HTML de la ronda actual en el historial.
+         * @returns {Object|null} Los datos de Provably Fair o null.
+         */
+        async function getProvablyFairData(roundItemElement) {
+            let pfData = {};
+            const iframeDoc = document.getElementById('gameFrame').contentDocument;
+            if (!iframeDoc) {
+                console.warn("No se pudo acceder al documento del iframe.");
+                return null;
+            }
+
+            try {
+                // Primero, intenta hacer clic en el botón de detalles de la ronda si existe
+                // Esto es común para revelar las semillas.
+                const viewDetailsButton = roundItemElement.querySelector(VIEW_DETAILS_BUTTON_SELECTOR);
+                if (viewDetailsButton) {
+                    viewDetailsButton.click();
+                    // Esperar un poco para que el modal/detalles carguen
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                }
+
+                // Ahora, busca los elementos de las semillas dentro del documento del iframe
+                const serverSeedEl = iframeDoc.querySelector(SERVER_SEED_SELECTOR);
+                const clientSeedEl = iframeDoc.querySelector(CLIENT_SEED_SELECTOR);
+                const combinedHashEl = iframeDoc.querySelector(COMBINED_HASH_SELECTOR);
+
+                if (serverSeedEl && clientSeedEl && combinedHashEl) {
+                    pfData.serverSeed = serverSeedEl.textContent.trim();
+                    pfData.clientSeed = clientSeedEl.textContent.trim();
+                    pfData.combinedHash = combinedHashEl.textContent.trim();
+                } else {
+                    console.warn("No se encontraron todos los elementos de Provably Fair. Ajusta los selectores.");
+                    // No devolver null, solo dejar los campos vacíos si no se encuentran
+                }
+
+            } catch (e) {
+                console.error("Error extrayendo datos de Provably Fair:", e);
+                appendLog(`Error PF data: ${e.message}`, 'error');
+                return null;
+            } finally {
+                // Si abrimos un modal, intentar cerrarlo para no interferir con futuras interacciones
+                const closeButton = iframeDoc.querySelector(PF_CLOSE_BUTTON_SELECTOR);
+                if (closeButton) {
+                    closeButton.click();
+                    await new Promise(resolve => setTimeout(resolve, 200)); // Esperar para que se cierre
+                }
+            }
+            return pfData;
+        }
+
+        /**
+         * Intenta extraer los datos de la última ronda finalizada desde el iframe.
+         * @returns {Object|null} Los datos de la ronda o null si no se encuentran o no es nueva.
+         */
+        async function collectRoundData() {
+            const iframeDoc = document.getElementById('gameFrame').contentDocument;
+            if (!iframeDoc) {
+                // console.warn("Iframe no cargado o inaccesible.");
+                return null;
+            }
+
+            try {
+                const lastRoundItem = iframeDoc.querySelector(LAST_ROUND_ITEM_SELECTOR);
+                if (lastRoundItem) {
+                    // Lógica para extraer ID y multiplicador del elemento de la última ronda
+                    // **ADAPTA ESTO A CÓMO TU CASINO MUESTRA ESTOS DATOS**
+                    // Puede que estén en el textContent, o en atributos, o en hijos específicos.
+                    let roundId = null;
+                    let multiplier = null;
+
+                    const multiplierEl = lastRoundItem.querySelector(MULTIPLIER_IN_ITEM_SELECTOR);
+                    const roundIdEl = lastRoundItem.querySelector(ROUND_ID_IN_ITEM_SELECTOR);
+
+                    if (multiplierEl) {
+                        multiplier = parseFloat(multiplierEl.textContent.replace('x', '').trim());
+                    } else {
+                        // Intenta extraer del texto completo si no hay selector específico
+                        const text = lastRoundItem.textContent.trim();
+                        const match = text.match(/(\d+\.?\d*)x/); // Busca un número seguido de 'x'
+                        if (match) multiplier = parseFloat(match[1]);
+                    }
+
+                    if (roundIdEl) {
+                        roundId = roundIdEl.textContent.trim();
+                    } else {
+                        // Si no hay un elemento específico para el ID, puedes intentar generarlo
+                        // a partir de la fecha o de un hash del contenido de la ronda
+                        roundId = `r_${Date.now()}`; // fallback
+                    }
+
+                    if (roundId && multiplier !== null && roundId !== lastProcessedRoundId) {
+                        lastProcessedRoundId = roundId;
+                        console.log(`Nueva ronda detectada: ${roundId}, Multiplicador: ${multiplier}`);
+                        appendLog(`Nueva ronda: ${roundId}, Multiplicador: ${multiplier}`);
+
+                        const roundData = {
+                            roundId: roundId,
+                            timestamp: Date.now(),
+                            multiplier: multiplier
+                        };
+
+                        // Intentar obtener los datos de Provably Fair para esta ronda
+                        const pfData = await getProvablyFairData(lastRoundItem);
+                        if (pfData) {
+                            Object.assign(roundData, pfData); // Fusiona los datos de PF
+                        } else {
+                            console.warn("No se pudieron obtener los datos de Provably Fair para esta ronda.");
+                            appendLog("No se pudieron obtener los datos de Provably Fair para esta ronda.", 'warning');
+                        }
+
+                        return roundData;
+                    }
+                }
+            } catch (e) {
+                console.error("Error en collectRoundData:", e);
+                appendLog(`Error recolectando datos: ${e.message}`, 'error');
+            }
+            return null;
+        }
+
+        /**
+         * Inicia la recolección de datos periódica.
+         */
+        function startCollection() {
+            if (isCollecting) {
+                console.warn("La recolección ya está en progreso.");
+                appendLog("La recolección ya está en progreso.", 'warning');
+                return;
+            }
+            console.log("Iniciando recolección de datos...");
+            appendLog("Iniciando recolección de datos...");
+            isCollecting = true;
+            document.getElementById('startButton').disabled = true;
+            document.getElementById('stopButton').disabled = false;
+
+            // Ejecutar la primera vez inmediatamente
+            collectRoundData().then(newData => {
+                if (newData) {
+                    const allData = loadCollectedData();
+                    allData.push(newData);
+                    saveCollectedData(allData);
+                }
+            });
+
+            collectionInterval = setInterval(async () => {
+                const newData = await collectRoundData();
+                if (newData) {
+                    const allData = loadCollectedData();
+                    allData.push(newData);
+                    saveCollectedData(allData);
+                }
+            }, COLLECTION_INTERVAL_MS);
+        }
+
+        /**
+         * Detiene la recolección de datos.
+         */
+        function stopCollection() {
+            if (collectionInterval) {
+                clearInterval(collectionInterval);
+                collectionInterval = null;
+                isCollecting = false;
+                console.log("Recolección de datos detenida.");
+                appendLog("Recolección de datos detenida.");
+                document.getElementById('startButton').disabled = false;
+                document.getElementById('stopButton').disabled = true;
+            } else {
+                console.warn("La recolección no está activa.");
+                appendLog("La recolección no está activa.", 'warning');
+            }
+        }
+
+        /**
+         * Limpia todos los datos recolectados de localStorage.
+         */
+        function clearCollectedData() {
+            if (confirm("¿Estás seguro de que quieres borrar todos los datos recolectados?")) {
+                localStorage.removeItem(STORAGE_KEY);
+                lastProcessedRoundId = null;
+                console.log("Datos recolectados borrados de localStorage.");
+                appendLog("Datos recolectados borrados de localStorage.");
+            }
+        }
+
+        /**
+         * Descarga los datos recolectados como un archivo JSON.
+         */
+        function downloadCollectedData() {
+            const data = loadCollectedData();
+            if (data.length === 0) {
+                console.warn("No hay datos para descargar.");
+                appendLog("No hay datos para descargar.", 'warning');
+                return;
+            }
+            const filename = `aviator_data_${new Date().toISOString().slice(0,10)}.json`;
+            const jsonStr = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            console.log(`Datos descargados como ${filename}`);
+            appendLog(`Datos descargados como ${filename}`);
+        }
+
+        // Exponemos las funciones globalmente para que puedan ser llamadas desde los botones
+        window.startAviatorCollection = startCollection;
+        window.stopAviatorCollection = stopCollection;
+        window.clearAviatorCollection = clearCollectedData;
+        window.downloadAviatorData = downloadCollectedData;
+        window.showAviatorCollectedData = () => {
+            const data = loadCollectedData();
+            console.log(data);
+            appendLog(`Datos en consola (Total: ${data.length})`);
+        };
+
+        // Inicializar el estado de los botones al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('stopButton').disabled = true;
+            appendLog("Página cargada. Por favor, cargue el juego Aviator en el iframe.", 'info');
+        });
+
+        // ---------------------------------------------------------------------
+        // ------------------- FIN SCRIPT PRINCIPAL ----------------------------
+        // ---------------------------------------------------------------------
+    </script>
+</body>
 </html>
