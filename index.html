@@ -64,7 +64,8 @@
         }*/
         
         .nombre, 
-        .saludo {
+        .saludo, 
+        .Link_doi{
             position: absolute;
             /*background: #000;*/
             /* opacity: 0.5;*/
@@ -73,18 +74,18 @@
             text-align: left;
             font-weight: 700; 
         }
-        /*.nombre {
-            top: 256px;
-            left: 62px;
-            font-size: 20px;
-        }*/
+        .nombre {
+top: 310px;
+    left: 75px;
+    font-size: 22px;
+        }
 
-        .saludo {
+      /*.saludo {
     top: 3995px;
     left: 60px;
     color: #000000;
     font-size: 21px;
-        }
+        }*/
         
         .link_safe {
             top: 2398px;
@@ -98,7 +99,7 @@
             background-color: white;
             position: absolute;
             display: flex;
-            bottom: 11px;
+            bottom: 0px;
             padding: 8px 0px;
             width: 100%;
             height: auto;
@@ -110,16 +111,16 @@
 
         
         .footer a {
-            color: #382e59;
-            font-size: 12px;
-            text-decoration: none;
-            margin: 0px;
-            padding: 0px 32px;
-            border: 1px solid #382e59;
-            border-bottom: 0px;
-            border-top: 0px;
-            margin-left: -1px;
-            font-weight: 700;
+    color: #382e59;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px 32px;
+    border: 1px solid #382e59;
+    border-bottom: 0px;
+    border-top: 0px;
+    margin-left: -1px;
+    font-weight: 700;
         }
 
         /* Bloque .footer a:first-child ORIGINAL - REVISADO Y SINTÁCTICAMENTE CORRECTO */
@@ -134,8 +135,8 @@
 
        
 
-        /* Estilo para el saludo principal del Dr. */
-        .greeting-line {
+       
+        /*.greeting-line {
                   position: absolute;
                   top: 231px;
                   left: 26px;
@@ -143,28 +144,35 @@
                   font-size: 21px;
                   font-weight: 600;
                   text-align: left;
-        }
+        }*/
 
-        /* Estilo para el número de teléfono del usuario */
-        .user-phone-line {
+        
+       /* .user-phone-line {
             position: absolute;
-            top: 4020px; /* Ajusta esta posición para que esté debajo del saludo */
+            top: 4020px; 
             left: 62px;
             color: #000000;
-            font-size: 21px; /* Puedes darle un tamaño diferente */
+            font-size: 21px; /
             font-weight: 600;
             text-align: left;
-        }
+        }*/
 
-        /* Estilo para el email del usuario */
-        .user-email-line {
+    
+  /*      .user-email-line {
             position: absolute;
-            top: 4045px; /* Ajusta esta posición para que esté debajo del teléfono */
+            top: 4045px;
             left: 62px;
             color: #000000;
-            font-size: 21px; /* Puedes darle un tamaño diferente */
+            font-size: 21px; 
             font-weight: 600;
             text-align: left;
+        } */
+
+        .Link_doi{
+            top: 1610px;
+            left: 76px;
+            width: 228px;
+            height: 14px;
         }
     </style>
 </head>
@@ -172,25 +180,26 @@
 <body>
     <img src="images/email.jpg" alt="Jivi Superioridad Clinica">
 
-    <p class="saludo">
+    <!-- <p class="saludo">
         {{userName}}
-    </p>
+    </p> -->
     <p class="nombre">
-        <!-- Estimado Dr. {{accFname}} {{accLname}}<br> -->
+        Estimado Dr. {{accFname}} {{accLname}}<br>
     </p>
-    <p class="greeting-line">
-        Estimado(a) Dr. {{accTitle}} {{accFname}} {{accLname}}
-    </p>
-
-    <p class="user-phone-line">
-        <a href="tel:{{User.Phone}}" style="color: #000000; text-decoration: none;">{{User.Phone}}</a>
+    <!-- <p class="greeting-line"> -->
+        <!-- Estimado(a) Dr. {{accTitle}} {{accFname}} {{accLname}} -->
     </p>
 
+    <!-- <p class="user-phone-line">
+        <a href="tel:{{User.Phone}}" style="color: #000000; text-decoration: none;">{{User.Phone}}</a> -->
+    </p>
+<!-- 
     <p class="user-email-line">
-   <a href="mailto:{{userEmailAddress}}" style="color: #000000; text-decoration: none;">{{userEmailAddress}}</a>
+   <a href="mailto:{{userEmailAddress}}" style="color: #000000; text-decoration: none;">{{userEmailAddress}}</a> -->
     </p>
     <!-- <a href="https://abenamar.mendez@bayer.com" target="_blank" class="link_safe" rel="noopener noreferrer">ST</a> -->
 
+    <a href="https://doi.org/10.1177/2040620723" class="Link_doi" target="_blank"></a>
 
     <section class="footer">
         <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad" rel="noopener noreferrer">Política de privacidad</a>
