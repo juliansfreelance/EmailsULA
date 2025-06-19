@@ -65,7 +65,8 @@
         
         .nombre, 
         .saludo, 
-        .Link_doi{
+        .Link_doi,
+        .Link_2{
             position: absolute;
             /*background: #000;*/
             /* opacity: 0.5;*/
@@ -133,46 +134,20 @@ top: 310px;
             border: 0px;
         }
 
-       
+                .Link_2{
+    top: 1384px;
+    left: 343px;
+    width: 214px;
+    height: 57px;
 
-       
-        /*.greeting-line {
-                  position: absolute;
-                  top: 231px;
-                  left: 26px;
-                  color: #000000;
-                  font-size: 21px;
-                  font-weight: 600;
-                  text-align: left;
-        }*/
-
-        
-       /* .user-phone-line {
-            position: absolute;
-            top: 4020px; 
-            left: 62px;
-            color: #000000;
-            font-size: 21px; /
-            font-weight: 600;
-            text-align: left;
-        }*/
-
-    
-  /*      .user-email-line {
-            position: absolute;
-            top: 4045px;
-            left: 62px;
-            color: #000000;
-            font-size: 21px; 
-            font-weight: 600;
-            text-align: left;
-        } */
+        }
 
         .Link_doi{
             top: 1610px;
             left: 76px;
             width: 228px;
             height: 14px;
+
         }
     </style>
 </head>
@@ -180,26 +155,14 @@ top: 310px;
 <body>
     <img src="images/email.jpg" alt="Jivi Superioridad Clinica">
 
-    <!-- <p class="saludo">
-        {{userName}}
-    </p> -->
+s
     <p class="nombre">
         Estimado Dr. {{accFname}} {{accLname}}<br>
     </p>
-    <!-- <p class="greeting-line"> -->
-        <!-- Estimado(a) Dr. {{accTitle}} {{accFname}} {{accLname}} -->
-    </p>
 
-    <!-- <p class="user-phone-line">
-        <a href="tel:{{User.Phone}}" style="color: #000000; text-decoration: none;">{{User.Phone}}</a> -->
-    </p>
-<!-- 
-    <p class="user-email-line">
-   <a href="mailto:{{userEmailAddress}}" style="color: #000000; text-decoration: none;">{{userEmailAddress}}</a> -->
-    </p>
-    <!-- <a href="https://abenamar.mendez@bayer.com" target="_blank" class="link_safe" rel="noopener noreferrer">ST</a> -->
 
     <a href="https://doi.org/10.1177/2040620723" class="Link_doi" target="_blank"></a>
+    <a href="{{$698210}}" class="Link_2" target="_blank"></a>
 
     <section class="footer">
         <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad" rel="noopener noreferrer">Política de privacidad</a>
