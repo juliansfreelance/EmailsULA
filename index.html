@@ -10,13 +10,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-    <meta name="description" content="Firialta Mecanismo De Acción" />
+    <meta name="description" content="Firialta Reduccion De Riesgo" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..16,700&display=swap" rel="stylesheet">
 
-    <title>Firialta Mecanismo De Acción</title>
+    <title>Firialta Reduccion De Riesgo</title>
     <style>
         /* Reglas generales */
         *,
@@ -72,92 +72,72 @@
         .link_observatorio,
         .link_observatorio2,
         .Link_video,
-        .Qr_EC,
-        .Qr_PE{
+        .Link_Guia1,
+        .Link_Guia2{
             position: absolute;
             /*background: #000;*/
             /* opacity: 0.5;*/
             font-size: 22px;
-            color: #294294;
+            color: #5f6266;
             text-align: left;
             font-weight: 700; 
             /*background-color: rgb(255, 0, 0, 0.6);*/
            
         }
-        /*.nombre {
-            top: 256px;
-            left: 62px;
-            font-size: 20px;
-        }*/
-
-        .saludo {
-    top: 1640px;
-    left: 55px;
-    color: #000000;
-    font-size: 21px;
+        .nombre {
+                top: 396px;
+                left: 323px;
+                font-size: 20px;
         }
+
         
         .link_safe {
-                top: 2407px;
-                left: 341px;
-                width: 184px;
+                top: 2340px;
+                left: 539px;
+                width: 178px;
                 height: 14px;
-        }
+}
+        
         .link_bayer{
-                top: 2294px;
-                left: 576px;
-                width: 166px;
+                top: 2231px;
+                left: 616px;
+                width: 159px;
                 height: 12px;
         }
         .link_degemid{
-                top: 2337px;
-                left: 673px;
-                width: 148px;
+                top: 2286px;
+                left: 176px;
+                width: 276px;
                 height: 12px;
         }
-        .link_degemid2{
-                top: 2352px;
-                left: 63px;
-                width: 148px;
-                height: 12px;
-        }
+
         .link_observatorio{
-                top: 2352px;
-                left: 612px;
-                width: 186px;
+                top: 2301px;
+                left: 322px;
+                width: 326px;
                 height: 12px;
         }
-        .link_observatorio2{
-                top: 2366px;
-                left: 63px;
-                width: 153px;
-                height: 12px;
+
+        .Link_Guia1{
+                top: 1974px;
+                left: 256px;
+                width: 172px;
+                height: 175px;
+                border-radius: 113px;
         }
-        .Qr_EC{
-                top: 2468px;
-                left: 326px;
-                width: 108px;
-                height: 108px;
-        }
-        .Qr_PE{
-                top: 2468px;
-                left: 482px;
-                width: 108px;
-                height: 108px;
-}
-        
-        .Link_video{
-                top: 1028px;
-                left: 3px;
-                width: 894px;
-                height: 364px;
+        .Link_Guia2{
+                top: 1974px;
+                left: 452px;
+                width: 172px;
+                height: 175px;
+                border-radius: 113px;
 }
 
         .footer {
-            background-color: #f2f2f2;
+            background-color: white;
             position: absolute;
             display: flex;
-            bottom: 80px;
+            bottom: 08px;
             padding: 8px 0px;
             width: 100%;
             height: auto;
@@ -226,35 +206,24 @@
 </head>
 
 <body>
-    <img src="images/email.jpg" alt="Firialta Mecanismo De Acción">
+    <img src="images/email.jpg" alt="Firialta Reduccion De Riesgo">
 
-    <p class="saludo">
-        {{userName}}
-    </p>
+
     <p class="nombre">
-        <!-- Estimado Dr. {{accFname}} {{accLname}}<br> -->
-    </p>
-    <!-- <p class="greeting-line">
-        Estimado(a) Dr. {{accTitle}} {{accFname}} {{accLname}}
-    </p> -->
-
-    <p class="user-phone-line">
-        <a href="tel:{{User.Phone}}" style="color: #000000; text-decoration: none;">{{User.Phone}}</a>
+        {{accFname}} {{accLname}}<br>
     </p>
 
-    <p class="user-email-line">
-   <a href="mailto:{{userEmailAddress}}" style="color: #000000; text-decoration: none;">{{userEmailAddress}}</a>
-    </p>
+
+
     <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
     <a href="https://go.bayer.com/FirialtaPE" target="_blank" class="link_bayer"></a>
     <a href="https://opm.digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_degemid"></a>
-    <a href="https://opm.digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_degemid2"></a>
+
     <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio"></a>
-    <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio2"></a>
-    <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaEC.pdf" target="_blank" class="Qr_EC"></a>
-    <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaprescribirPeru.pdf " target="_blank" class="Qr_PE"></a>
-    
-    <a href="             " target="_blank" class="Link_video"></a>
+ 
+    <a href="   " target="_blank" class="Link_Guia1"></a>
+    <a href="   " target="_blank" class="Link_Guia2"></a>
+
 
 
     <section class="footer">
