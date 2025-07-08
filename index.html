@@ -10,13 +10,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-    <meta name="description" content="Jivi Superioridad Clinica" />
+    <meta name="description" content="Firialta Retrasa La Enfermedad CR" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..16,700&display=swap" rel="stylesheet">
 
-    <title>Jivi Superioridad Clinica</title>
+    <title>Firialta Retrasa La Enfermedad CR</title>
     <style>
         /* Reglas generales */
         *,
@@ -63,15 +63,25 @@
             font-size: 12px;
         }*/
         
-        .nombre, 
-        .saludo {
+        .nombre,
+        .saludo,
+        .link_safe,
+        .link_bayer,
+        .link_degimid,
+        .link_degimid2,
+        .link_observatorio,
+        .link_observatorio2,
+        .link_documento,
+        .Qr_EC,
+        .Qr_PE{
             position: absolute;
             /*background: #000;*/
-            /* opacity: 0.5;*/
+            /opacity: 0.5;
             font-size: 22px;
             color: #294294;
             text-align: left;
-            font-weight: 700; 
+            font-weight: 700;
+            /* background-color: rgb(255, 0, 0, 0.6); */
         }
         /*.nombre {
             top: 256px;
@@ -80,42 +90,102 @@
         }*/
 
         .saludo {
-    top: 3995px;
-    left: 60px;
-    color: #000000;
-    font-size: 21px;
+    top: 1934px;
+    left: 62px;
+    color:#5e5e5e;
+    font-size: 18px;
         }
-        
+
         .link_safe {
-            top: 2398px;
-            left: 542px;
-            width: 289px;
+            top: 2424px;
+            left: 340px;
+            width: 184px;
             height: 14px;
+        }
+
+        .link_bayer
+        {
+            top: 2324px;
+            left: 577px;
+            width: 215px;
+            height: 12px;
+        }
+         .link_documento
+        {
+            top: 863px;
+            left: 173px;
+            width: 551px;
+            height: 50px;
+        }
+
+         .link_degimid
+        {
+        top: 2367px;
+        left: 623px;
+        width: 199px;
+        height: 12px;
+        }
+         .link_degimid2
+        {
+        top: 2382px;
+        left: 64px;
+        width: 97px;
+        height: 12px;
+        }
+        .link_observatorio
+        {
+        top: 2382px;
+        left: 564px;
+        width: 267px;
+        height: 12px;
+        }
+        .link_observatorio2
+        {
+        top: 2396px;
+        left: 64px;
+        width: 79px;
+        height: 12px;
+        }
+
+
+        .Qr_EC
+        {
+            top: 2490px;
+            left: 295px;
+            width: 132px;
+            height: 128px;
+        }
+
+        .Qr_PE {
+    top: 2490px;
+    left: 495px;
+    width: 132px;
+    height: 128px;
         }
 
         
         .footer {
-            background-color: white;
-            position: absolute;
-            display: flex;
-            bottom: 11px;
-            padding: 8px 0px;
-            width: 100%;
-            height: auto;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
+    background: linear-gradient(90, #b3123c 0%, #a91b3a 50%, #7b1335 100%);
+    position: absolute;
+    display: flex;
+    bottom: 37px;
+    padding: 8px 0px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
         }
 
         
         .footer a {
-            color: #382e59;
-            font-size: 12px;
+            color: white;
+            font-size: 14px;
             text-decoration: none;
             margin: 0px;
             padding: 0px 32px;
-            border: 1px solid #382e59;
+            border: 1px solid white;
             border-bottom: 0px;
             border-top: 0px;
             margin-left: -1px;
@@ -136,41 +206,54 @@
 
         /* Estilo para el saludo principal del Dr. */
         .greeting-line {
-                  position: absolute;
-                  top: 231px;
-                  left: 26px;
-                  color: #000000;
-                  font-size: 21px;
-                  font-weight: 600;
-                  text-align: left;
+                position: absolute;
+                top: 415px;
+                left: 71px;
+                color: #6b6669;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: left;
         }
 
         /* Estilo para el número de teléfono del usuario */
         .user-phone-line {
             position: absolute;
-            top: 4020px; /* Ajusta esta posición para que esté debajo del saludo */
+            top: 1955px; /* Ajusta esta posición para que esté debajo del saludo */
             left: 62px;
             color: #000000;
-            font-size: 21px; /* Puedes darle un tamaño diferente */
-            font-weight: 600;
+            font-size: 18px; /* Puedes darle un tamaño diferente */
+            font-weight: 700;
             text-align: left;
         }
 
         /* Estilo para el email del usuario */
         .user-email-line {
             position: absolute;
-            top: 4045px; /* Ajusta esta posición para que esté debajo del teléfono */
+            top: 1980px; /* Ajusta esta posición para que esté debajo del teléfono */
             left: 62px;
             color: #000000;
-            font-size: 21px; /* Puedes darle un tamaño diferente */
-            font-weight: 600;
+            font-size: 18px; /* Puedes darle un tamaño diferente */
+            font-weight: 700;
             text-align: left;
         }
     </style>
 </head>
 
 <body>
-    <img src="images/email.jpg" alt="Jivi Superioridad Clinica">
+<a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
+<a href="https://go.bayer.com/FirialtaPE" target="_blank" class="link_bayer"></a>
+<a href="https://opm-digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_degimid"></a>
+<a href="https://opm-digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_degimid2"></a>
+<a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio"></a>
+<a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio2"></a>
+
+<a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaEC.pdf" target="_blank" class="Qr_EC"></a>
+<a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaprescribirPeru.pdf" target="_blank" class="Qr_PE"></a>
+<a href=" "target="_blank" class="link_documento"></a>
+
+
+
+    <img src="images/email.jpg" alt="Firialta Retrasa La Enfermedad CR">
 
     <p class="saludo">
         {{userName}}
@@ -179,17 +262,18 @@
         <!-- Estimado Dr. {{accFname}} {{accLname}}<br> -->
     </p>
     <p class="greeting-line">
-        Estimado(a) Dr. {{accTitle}} {{accFname}} {{accLname}}
+        {{customText[Estimado Dr.|Estimada Dra.]}}<br>
+        {{accFname}} {{accLname}},
     </p>
 
     <p class="user-phone-line">
-        <a href="tel:{{User.Phone}}" style="color: #000000; text-decoration: none;">{{User.Phone}}</a>
+        <a href="tel:{{User.Phone}}" style="color:#5e5e5e; text-decoration: none;">{{User.Phone}}</a>
     </p>
 
     <p class="user-email-line">
-   <a href="mailto:{{userEmailAddress}}" style="color: #000000; text-decoration: none;">{{userEmailAddress}}</a>
+   <a href="mailto:{{userEmailAddress}}" style="color: #5e5e5e; text-decoration: none;">{{userEmailAddress}}</a>
     </p>
-    <!-- <a href="https://abenamar.mendez@bayer.com" target="_blank" class="link_safe" rel="noopener noreferrer">ST</a> -->
+   
 
 
     <section class="footer">
