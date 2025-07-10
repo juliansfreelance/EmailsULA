@@ -10,13 +10,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-    <meta name="description" content="Firialta Mecanismo De Acción" />
+    <meta name="description" content="Eylia Tratamiento De Confianza" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..16,700&display=swap" rel="stylesheet">
 
-    <title>Firialta Mecanismo De Acción</title>
+    <title>Eylia Tratamiento De Confianza</title>
     <style>
         /* Reglas generales */
         *,
@@ -64,100 +64,53 @@
         }*/
         
         .nombre, 
-        .saludo,
         .link_safe,
-        .link_bayer,
-        .link_degemid,
-        .link_degemid2,
-        .link_observatorio,
-        .link_observatorio2,
         .Link_video,
-        .Qr_EC,
-        .Qr_PE{
+        .Qr_Eylia{
             position: absolute;
             /*background: #000;*/
             /* opacity: 0.5;*/
             font-size: 22px;
-            color: #294294;
+            color: black;
             text-align: left;
             font-weight: 700; 
             /*background-color: rgb(255, 0, 0, 0.6);*/
            
         }
-        /*.nombre {
-            top: 256px;
-            left: 62px;
-            font-size: 20px;
-        }*/
-
-        .saludo {
-    top: 1640px;
-    left: 55px;
-    color: #000000;
-    font-size: 21px;
+        .nombre {
+                top: 446px;
+                left: 70px;
+                font-size: 28px;
         }
+
         
         .link_safe {
-                top: 2407px;
-                left: 341px;
-                width: 184px;
-                height: 14px;
+    top: 1877px;
+    left: 320px;
+    width: 207px;
+    height: 14px;
         }
-        .link_bayer{
-                top: 2294px;
-                left: 576px;
-                width: 166px;
-                height: 12px;
-        }
-        .link_degemid{
-                top: 2337px;
-                left: 673px;
-                width: 148px;
-                height: 12px;
-        }
-        .link_degemid2{
-                top: 2352px;
-                left: 63px;
-                width: 148px;
-                height: 12px;
-        }
-        .link_observatorio{
-                top: 2352px;
-                left: 612px;
-                width: 186px;
-                height: 12px;
-        }
-        .link_observatorio2{
-                top: 2366px;
-                left: 63px;
-                width: 153px;
-                height: 12px;
-        }
-        .Qr_EC{
-                top: 2468px;
-                left: 326px;
-                width: 108px;
-                height: 108px;
-        }
-        .Qr_PE{
-                top: 2468px;
-                left: 482px;
-                width: 108px;
-                height: 108px;
+
+        .Qr_Eylia{
+    top: 1816px;
+    left: 731px;
+    width: 84px;
+    height: 80px;
 }
         
         .Link_video{
-                top: 1028px;
-                left: 3px;
-                width: 894px;
-                height: 364px;
+                top: 1353px;
+                left: 67px;
+                width: 771px;
+                height: 382px;
+                border-radius: 25PX;
 }
 
         .footer {
-            background-color: #f2f2f2;
+            background-color: white;
             position: absolute;
             display: flex;
-            bottom: 80px;
+            bottom: -1px;
             padding: 8px 0px;
             width: 100%;
             height: auto;
@@ -190,71 +143,24 @@
             border: 0px;
         }
 
-        /* Estilo para el saludo principal del Dr. */
-        .greeting-line {
-            position: absolute;
-            top: 231px;
-            left: 26px;
-            color: #000000;
-            font-size: 21px;
-            font-weight: 600;
-            text-align: left;
-        }
 
-        /* Estilo para el número de teléfono del usuario */
-        .user-phone-line {
-            position: absolute;
-            top: 1665px; /* Ajusta esta posición para que esté debajo del saludo */
-            left: 55px;
-            color: #000000;
-            font-size: 21px; /* Puedes darle un tamaño diferente */
-            font-weight: 600;
-            text-align: left;
-        }
 
-        /* Estilo para el email del usuario */
-        .user-email-line {
-            position: absolute;
-            top: 1690px; /* Ajusta esta posición para que esté debajo del teléfono */
-            left: 55px;
-            color: #000000;
-            font-size: 21px; /* Puedes darle un tamaño diferente */
-            font-weight: 600;
-            text-align: left;
-        }
     </style>
 </head>
 
 <body>
-    <img src="images/email.jpg" alt="Firialta Mecanismo De Acción">
+    <img src="images/email.jpg" alt="Eylia Tratamiento De Confianza">
 
-    <p class="saludo">
-        {{userName}}
-    </p>
     <p class="nombre">
-        <!-- Estimado Dr. {{accFname}} {{accLname}}<br> -->
-    </p>
-    <!-- <p class="greeting-line">
-        Estimado(a) Dr. {{accTitle}} {{accFname}} {{accLname}}
-    </p> -->
-
-    <p class="user-phone-line">
-        <a href="tel:{{User.Phone}}" style="color: #000000; text-decoration: none;">{{User.Phone}}</a>
+        Estimado Dr. <br> {{accFname}} {{accLname}}<br>
     </p>
 
-    <p class="user-email-line">
-   <a href="mailto:{{userEmailAddress}}" style="color: #000000; text-decoration: none;">{{userEmailAddress}}</a>
-    </p>
+
     <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
-    <a href="https://go.bayer.com/FirialtaPE" target="_blank" class="link_bayer"></a>
-    <a href="https://opm.digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_degemid"></a>
-    <a href="https://opm.digemid.minsa.gob.pe/#/consulta-producto" target="_blank" class="link_degemid2"></a>
-    <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio"></a>
-    <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio2"></a>
-    <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaEC.pdf" target="_blank" class="Qr_EC"></a>
-    <a href="https://www.informacionparaprescribir.com/sites/g/files/vrxlpx51731/files/2024-05/FirialtaprescribirPeru.pdf " target="_blank" class="Qr_PE"></a>
+  
+    <a href="https://go.bayer.com/prospectoEylia" target="_blank" class="Qr_Eylia"></a>
     
-    <a href="https://www.youtube.com/watch?v=J856gPaysW0" target="_blank" class="Link_video"></a>
+    <a href="https://www.universomedico.com.ar/contenidos/c045be51-d7b4-4a78-904d-eafa2018a6d8?token=6102f70a-da28-4578-9c88-4969b3b92fe1" target="_blank" class="Link_video"></a>
 
 
     <section class="footer">
