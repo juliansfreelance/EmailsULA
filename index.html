@@ -54,63 +54,61 @@
             height: auto;
         }
 
-       
+
         /*.link_safe {
             position: absolute;
             color: transparent;
             text-decoration: none;
-            background-color: rgb(255, 0, 0, 0.6); 
+            background-color: rgb(255, 0, 0, 0.6);
             font-size: 12px;
         }*/
-        
-        .nombre, 
-        .link_safe,
-        .Link_video,
+
+        .nombre,
+        .Qr_springer,
         .Qr_Eylia{
             position: absolute;
             /*background: #000;*/
             /* opacity: 0.5;*/
             font-size: 22px;
-            color: black;
+            color: #003d6b;
             text-align: left;
             font-weight: 700; 
             /*background-color: rgb(255, 0, 0, 0.6);*/
-           
+
         }
         .nombre {
-                top: 446px;
-                left: 70px;
-                font-size: 28px;
+                top: 62px;
+                left: 207px;
+                font-size: 26px;
         }
 
-        
-        .link_safe {
-    top: 1877px;
-    left: 320px;
-    width: 207px;
-    height: 14px;
-        }
+
+        /*.link_safe {
+            top: 1877px;
+            left: 320px;
+            width: 207px;
+            height: 14px;
+        }*/
 
         .Qr_Eylia{
-    top: 1816px;
-    left: 731px;
-    width: 84px;
-    height: 80px;
+            top: 1100px;
+            left: 82px;
+            width: 67px;
+            height: 65px;
 }
-        
-        .Link_video{
-                top: 1353px;
-                left: 67px;
-                width: 771px;
-                height: 382px;
-                border-radius: 25PX;
+
+        .Qr_springer{
+            top: 878px;
+            left: 709px;
+            width: 117px;
+            height: 116px;
 }
 
         .footer {
-            background-color: white;
+        /* background-color: #00466b;*/
             position: absolute;
             display: flex;
-            bottom: -1px;
+            bottom: 2px;
             padding: 8px 0px;
             width: 100%;
             height: auto;
@@ -121,16 +119,17 @@
         }
 
         .footer a {
-            color: black;
-            font-size: 15px;
+            background-color: #00466b;
+            color: white;
+            font-size: 13px;
             text-decoration: none;
             margin: 0px;
-            padding: 0px 32px;
-            border: 1px solid black;
+            padding: 0px 20px;
+            border: 1px solid white;
             border-bottom: 0px;
             border-top: 0px;
-            margin-left: -1px;
-            font-weight: 700;
+            margin-left: 0px;
+            font-weight: 400;
         }
 
         /* Bloque .footer a:first-child ORIGINAL - REVISADO Y SINTÁCTICAMENTE CORRECTO */
@@ -152,15 +151,15 @@
     <img src="images/email.jpg" alt="Eylia Tratamiento De Confianza">
 
     <p class="nombre">
-        Estimado Dr. <br> {{accFname}} {{accLname}}<br>
+        Estimado Dr. {{accFname}} {{accLname}}<br>
     </p>
 
 
-    <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
-  
+
+
     <a href="https://go.bayer.com/prospectoEylia" target="_blank" class="Qr_Eylia"></a>
-    
-    <a href="https://www.universomedico.com.ar/contenidos/c045be51-d7b4-4a78-904d-eafa2018a6d8?token=6102f70a-da28-4578-9c88-4969b3b92fe1" target="_blank" class="Link_video"></a>
+
+    <a href="https://link.springer.com/content/pdf/10.1007/s12325-020-01236-x.pdf" target="_blank" class="Qr_springer"></a>
 
 
     <section class="footer">
