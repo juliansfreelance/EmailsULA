@@ -64,67 +64,69 @@
         }*/
 
         .nombre,
-        .Qr_springer,
-        .Qr_Eylia{
+        .Qr_adempas,
+        .Qr_normativa,
+        .link_safe{
             position: absolute;
             /*background: #000;*/
             /* opacity: 0.5;*/
             font-size: 22px;
-            color: #003d6b;
+            color: #727678;
             text-align: left;
             font-weight: 700; 
-            /*background-color: rgb(255, 0, 0, 0.6);*/
+           /* background-color: rgb(255, 0, 0, 0.6);*/
 
         }
         .nombre {
-                top: 62px;
-                left: 207px;
-                font-size: 26px;
+                top: 124px;
+                left: 269px;
+                font-size: 29px;
         }
 
 
-        /*.link_safe {
-            top: 1877px;
-            left: 320px;
-            width: 207px;
-            height: 14px;
-        }*/
+        .link_safe {
+            top: 1328px;
+            left: 272px;
+            width: 139px;
+            height: 11px;
+        }
 
-        .Qr_Eylia{
-            top: 1100px;
-            left: 82px;
-            width: 67px;
-            height: 65px;
+        .Qr_normativa{
+            top: 1268px;
+            left: 97px;
+            width: 379px;
+            height: 10px;
 }
 
-        .Qr_springer{
-            top: 878px;
-            left: 709px;
-            width: 117px;
-            height: 116px;
+        .Qr_adempas{
+            top: 1232px;
+            left: 720px;
+            width: 92px;
+            height: 92px;
+            border-radius: 5px;
 }
 
         .footer {
         /* background-color: #00466b;*/
-            position: absolute;
-            display: flex;
-            bottom: 2px;
-            padding: 8px 0px;
-            width: 100%;
-            height: auto;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
+                position: absolute;
+                display: flex;
+                bottom: 17px;
+                padding: 8px 0px;
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
         }
 
         .footer a {
-            background-color: #00466b;
+            background-color: #e86351;
             color: white;
-            font-size: 13px;
+            font-size: 14px;
             text-decoration: none;
             margin: 0px;
-            padding: 0px 20px;
+            padding: 0px 17px;
             border: 1px solid white;
             border-bottom: 0px;
             border-top: 0px;
@@ -151,15 +153,16 @@
     <img src="images/email.jpg" alt="Eylia Tratamiento De Confianza">
 
     <p class="nombre">
-        Estimado Dr. {{accFname}} {{accLname}}<br>
+    &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; Estimado Dr.(a). <br> {{accFname}} {{accLname}} 
     </p>
 
 
 
+   <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
 
-    <a href="https://go.bayer.com/prospectoEylia" target="_blank" class="Qr_Eylia"></a>
+    <a href="https://www.argentina.gob.ar/normativa/nacional/disposici%C3%B3n-3185-1999-58457/texto" target="_blank" class="Qr_normativa"></a>
 
-    <a href="https://link.springer.com/content/pdf/10.1007/s12325-020-01236-x.pdf" target="_blank" class="Qr_springer"></a>
+    <a href="https://go.bayer.com/prospectoAdempas" target="_blank" class="Qr_adempas"></a>
 
 
     <section class="footer">
