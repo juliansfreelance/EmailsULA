@@ -10,15 +10,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name='author' href="https://github.com/juliansfreelance" email="jcalderon.code@gmail.com" content='Julio Calderón' />
-    <meta name="description" content="EYLIA AR | Empezá con confianza" />
-
+    <meta name="description" content="Videopodcast ConTacto | El cáncer de próstata no se enfrenta solo." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..16,700&display=swap" rel="stylesheet">
-
-    <title>EYLIA AR | Empezá con confianza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Videopodcast ConTacto | El cáncer de próstata no se enfrenta solo.</title>
     <style>
-        /* Reglas generales */
         *,
         *::before,
         *::after {
@@ -27,19 +24,41 @@
             -webkit-font-smoothing: antialiased;
             user-select: none;
         }
-
         @media (prefers-reduced-motion: no-preference) {
             :root {
                 scroll-behavior: smooth;
             }
         }
-
         html {
             background-color: #FFFFFF;
         }
-
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
         body {
-            font-family: "Nunito Sans", sans-serif;
+            font-family: "Poppins", sans-serif;
             font-weight: 400;
             font-style: normal;
             line-height: 1.5;
@@ -53,55 +72,65 @@
             width: 100%;
             height: auto;
         }
-
-
-        .link_safe {
-            position: absolute;
-            color: transparent;
-            text-decoration: none;
-            /* background-color: rgb(255, 0, 0, 0.6); */
-            font-size: 12px;
-        }
-
         .nombre,
-        .link_aplicacion,
+        .link_video1,
+        .link_video2,
+        .link_opm,
+        .link_observatorio,
         .link_safe {
             position: absolute;
             /* background: rgba(0, 0, 0, 0.5); */
-            font-size: 22px;
-            color: #FAFAFA;
+            text-decoration: none;
+            font-size: 9px;
+            color: transparent;
             text-align: left;
-            font-weight: 700;
         }
         .nombre {
-            width: 100%;
-            padding: 8px 30px;
-            top: 360px;
-            left: 0px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: 600;
+            width: 52%;
+            left: 48%;
+            top: 138px;
+            padding: 0px 25px;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 400;
             line-height: 1.2;
+            color: #FAFAFA;
+        }
+        .link_video1 {
+            top: 724px;
+            left: 110px;
+            width: 275px;
+            height: 199px;
+        }
+        .link_video2 {
+            top: 724px;
+            left: 498px;
+            width: 315px;
+            height: 199px;
         }
         .link_safe {
-            top: 2832px;
-            left: 28px;
-            width: 165px;
-            height: 16px;
+            top: 1290px;
+            left: 302px;
+            width: 186px;
+            height: 13px;
         }
-        .link_aplicacion{
-            top: 2773px;
-            left: 786px;
-            width: 78px;
-            height: 95px;
+        .link_observatorio {
+            top: 1229px;
+            left: 71px;
+            width: 331px;
+            height: 13px;
         }
-
+        .link_opm {
+            top: 1216px;
+            left: 126px;
+            width: 291px;
+            height: 13px;
+        }
         .footer {
-            background-color: rgba(0, 158, 74, 1);
             position: absolute;
             display: flex;
-            bottom: 0px;
-            padding: 6px 0px;
+            bottom: 5px;
+            padding: 14px 0px;
             width: 100%;
             height: auto;
             flex-direction: row;
@@ -110,43 +139,33 @@
             align-items: center;
         }
         .footer a {
-            /*background-color: rgba(207, 21, 21, 0.5);*/
             color: #FAFAFA;
-            font-size: 10px;
+            font-size: 12px;
             text-decoration: none;
             margin: 0px;
-            padding: 0px 20px;
+            padding: 0px 10px;
             border-right: 1px solid #FAFAFA;
-            font-weight: 700;
+            font-weight: 300;
         }
         .footer a:last-child {
             border: 0px;
         }
-
-
-
     </style>
 </head>
 
 <body>
-    <img src="images/email.jpg" alt="EYLIA AR | Empezá con confianza">
-
-    <p class="nombre">
-        Estimado Dr(a): {{accFname}} {{accLname}}
-    </p>
-
-
-
-    <a href="https://go.bayer.com/prospectoEylia" target="_blank" class="link_aplicacion"></a>
-    <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe"></a>
-
-
+    <img src="images/email.jpg" alt="Videopodcast ConTacto | El cáncer de próstata no se enfrenta solo.">
+    <p class="nombre">Estimado Dr(a): {{accFname}} {{accLname}}</p>
+    <a href="https://www.youtube.com/watch?v=zqBHPhv2ecw&list=PLPimSCqh9z-wGcArilsLKAySk88fuvwga&index=4" target="_blank" class="link_video1">Video 1</a>
+    <a href="https://www.youtube.com/watch?v=V84WL6d3bXE&list=PLPimSCqh9z-wGcArilsLKAySk88fuvwga&index=3" target="_blank" class="link_video2">Video 2</a>
+    <a href="https://opm-digemid.minsa.gob.pe/#/consulta-producto " target="_blank" class="link_opm">opm</a>
+    <a href="https://observatorio.digemid.minsa.gob.pe/obscalidad/webform2" target="_blank" class="link_observatorio">Observatorio</a>
+    <a href="https://safetrack-public.bayer.com/" target="_blank" class="link_safe">safetrack</a>
     <section class="footer">
         <a href="https://www.bayer.com/sites/default/files/Politica_Privacidad_Website_06112020.pdf" target="_blank" class="politica_privacidad" rel="noopener noreferrer">Política de privacidad</a>
         <a href="https://www.bayer.com/sites/default/files/General_Conditions_of%20Use_PACA.pdf" target="_blank" class="terminos_uso" rel="noopener noreferrer">Términos de uso</a>
         <a href="https://documents.eu.truman.bayer.com/co_ph/hcp/es/uns/unsubscribe_ae_commercial/?IdentityType=veeva&IdentityValue=001Qj00000R6N2PIAV&BrandID=RYqLl6L&ContentID=" target="_blank" class="cancelar_suscripción" rel="noopener noreferrer">Cancelar suscripción</a>
         <a href="https://www.bayer.com/en/contact-us?autotranslate=es" target="_blank" class="contacto" rel="noopener noreferrer">Contacto</a>
     </section>
-
 </body>
 </html>
